@@ -1,8 +1,6 @@
 Aardvark
 Aardwolf
 African
-African
-African
 Albatross
 Alligator
 Alpaca
@@ -17,7 +15,6 @@ Antlion
 Ape
 Aphid
 Arabian
-Arctic
 Arctic
 Armadillo
 Arrow
@@ -42,10 +39,7 @@ Beetle
 Bird
 Bison
 Black
-Black
 Blackbird
-Blue
-Blue
 Blue
 Boa
 Boar
@@ -95,7 +89,6 @@ Cow
 Coyote
 Crab
 Crane
-Crane
 Crawdad
 Crayfish
 Cricket
@@ -123,14 +116,11 @@ Echidna
 Eel
 Egret
 Elephant
-Elephant
 Elk
 Emu
 English
 Ermine
 Falcon
-Fancy
-Fancy
 Fancy
 Felidae
 Ferret
@@ -152,7 +142,6 @@ Gazelle
 Gecko
 Gerbil
 Giant
-Giant
 Gibbon
 Gila
 Giraffe
@@ -163,9 +152,7 @@ Gopher
 Gorilla
 Grasshopper
 Great
-Great
 Grizzly
-Ground
 Ground
 Grouse
 Guan
@@ -201,8 +188,6 @@ Jaguar
 Jay
 Jellyfish
 Junglefowl
-Kangaroo
-Kangaroo
 Kangaroo
 Kingfisher
 Kite
@@ -344,8 +329,6 @@ Scale
 Scallop
 Scorpion
 Sea
-Sea
-Sea
 Seahorse
 Shark
 Sheep
@@ -370,7 +353,6 @@ Sockeye
 Sole
 Sparrow
 Sperm
-Spider
 Spider
 Spoonbill
 Squid
@@ -399,7 +381,6 @@ Tern
 Thrush
 Tick
 Tiger
-Tiger
 Tiglon
 Toad
 Tortoise
@@ -413,7 +394,6 @@ Turtle
 Tyrannosaurus
 Urial
 Vampire
-Vampire
 Vicuna
 Viper
 Vole
@@ -422,7 +402,6 @@ Wallaby
 Walrus
 Warbler
 Wasp
-Water
 Water
 Weasel
 Whale
@@ -442,5 +421,4 @@ X-ray
 Xerinae
 Yak
 Yellow
-Zebra
 Zebra

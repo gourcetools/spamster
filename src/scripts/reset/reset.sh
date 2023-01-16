@@ -7,7 +7,10 @@ rm -f *
 cd ..
 cd privkeys
 rm -f *
+cd ..
+cd names
+rm -f *
 cd ../..
 cd json
 rm -f *
-cd ..
+cd ../scripts/reset

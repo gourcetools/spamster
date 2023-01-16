@@ -13,15 +13,21 @@ do
 	name=$(cat ../names/$file)
 	privkey=$(cat ../privkeys/$file)
 	pubkey=$(cat ../pubkeys/$file)
-	echo $name $(cat $file)
 	echo -ne " \"$name\" : \"$(cat $file)\"," >> ../../json/nostr.json
-	nostril --kind 0 --envelope --sec "$privkey" --content "{\"name\": \"$name\", \"nip05\": \"$name@gourcetools.github.io\"}" | websocat wss://relay.nostr.ch
+  echo "== Broadcasting NIP05 for $name =="
+	nostril --kind 0 --envelope --sec "$privkey" --content "{\"name\": \"$name\", \"picture\":\"https://thiscatdoesnotexist.com/\", \"nip05\": \"$name@gourcetools.github.io\"}" | websocat wss://relay.nostr.ch
 done
-
-truncate -s-1 ../../json/nostr.json
+rm -f log.txt
+truncate -s -1 ../../json/nostr.json
 echo -e "}"						>> ../../json/nostr.json
 echo -e "}"						>> ../../json/nostr.json
 cd ../../scripts
+
+  echo "== JSON FILE READY TO UPLOAD =="
+  echo "== UPLOAD TO yourwebsite.com/.well.known/nostr.json =="
+    echo "== JSON FILE is located at spamster/src/json/nostr.json =="
+
+
 
 
 
