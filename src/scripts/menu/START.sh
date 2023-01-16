@@ -51,15 +51,15 @@ case $choice in
   cd ../sendtext
   ./send-loop.sh 
   source ../menu/START.sh ;;
-  # Pattern 4
-  4)  echo "== Reset Spamster =="
-  cd ../reset
-   ./reset.sh 
-  source ../menu/START.sh ;;
-    # Pattern 5
-  5)  echo "== Follow everybot =="
+    # Pattern 4
+  4)  echo "== Follow everybot =="
   cd ../follow
    ./follow.sh 
+  source ../menu/START.sh ;;
+  # Pattern 5
+  5)  echo "== Reset Spamster =="
+  cd ../reset
+   ./reset.sh 
   source ../menu/START.sh ;;
   # Pattern 6
   5)  echo "Exit"
