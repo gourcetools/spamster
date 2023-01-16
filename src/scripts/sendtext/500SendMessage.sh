@@ -1,5 +1,5 @@
 #!/bin/bash
-cd tmp
+cd ../../tmp
 message=$(cat message)
 relay=$(cat relay)
 privkey=$(cat privkey)
@@ -11,7 +11,4 @@ echo "==========================================================================
 echo " "
 
 nostr-tool -p "$privkey" -d 2 -r "$relay" text-note -c "$message"	
-cd ..
-
-
-$shell
+cd ../scripts/sendtext
