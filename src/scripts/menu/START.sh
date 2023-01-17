@@ -8,7 +8,7 @@ echo "▀▄▄▄▄▄▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▀▄�
 echo "";
 echo "------------------------------------------------";
 echo "-------------- Welcome to Spamster ------------- ";
-echo "--------- Version: 0.0.2 | MIT Liscence ---------";
+echo "--------- Version: 0.0.3 | MIT Liscence ---------";
 echo "------------------------------------------------";
 echo "------------ FOR RESEARCH USE ONLY -------------";
 echo "     ┌─────────────┐";
@@ -17,11 +17,12 @@ echo "   ┌─┴─────────────┴──────�
 echo "   │    1) Generate keys                      │";
 echo "   │    2) Make nostr.json                    │";
 echo "   ├──────────────────────────────────────────┤";
-echo "   │    3) Send messages                      │";
-echo "   │    4) Follow everybot                    │";
+echo "   │    3) Start sending                      │";
+echo "   │    4) Start multi-sending                │";
+echo "   │    5) Follow everybody (broken for now)  │";
 echo "   ├──────────────────────────────────────────┤";
-echo "   │    5) Reset Spamster   	              │";
-echo "   │    6) Exit                               │";
+echo "   │    6) Reset Spamster   	              │";
+echo "   │    7) Exit                               │";
 echo "   └──────────────────────────────────────────┘";
 echo -n "    └─> Enter your choice [1-6]:";
 
@@ -52,22 +53,27 @@ case $choice in
   ./send-loop.sh 
   source ../menu/START.sh ;;
     # Pattern 4
-  4)  echo "== Follow everybot =="
+  4)  echo "== Start multi-sending =="
+  cd ../multi-spamster
+  ./multi-spamster.sh 
+  source ../menu/START.sh ;;
+    # Pattern 5
+  5)  echo "== Follow everybot =="
   cd ../follow
    ./follow.sh 
   source ../menu/START.sh ;;
-  # Pattern 5
-  5)  echo "== Reset Spamster =="
+  # Pattern 6
+  6)  echo "== Reset Spamster =="
   cd ../reset
    ./reset.sh 
   source ../menu/START.sh ;;
-  # Pattern 6
-  5)  echo "Exit"
+  # Pattern 7
+  7)  echo "Exit"
       exit;;
 
   # Default Pattern
   *) echo "     Invalid number..."
-    echo "     └─> Enter your choice [1-6]:";;
+    echo "     └─> Enter your choice [1-7]:";;
 esac
   echo
 done
