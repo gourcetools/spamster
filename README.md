@@ -1,4 +1,6 @@
 # spamster
+contact : - @bitpaint on telegram
+          - @BITPAINTCLUB on twitter
 
  "███████████████████████████████████████████████████
  "█─▄▄▄▄█▄─▄▄─██▀▄─██▄─▀█▀─▄█─▄▄▄▄█─▄─▄─█▄─▄▄─█▄─▄▄▀█
