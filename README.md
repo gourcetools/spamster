@@ -7,7 +7,7 @@ Spamster                         <br>
 
 # <b>🍩 What is Spamster?</b><br>
 <br>
-<b>Gource Tools is a toolbox made for nostr spamming.</b><br>
+<b>Spamster is a toolbox made for nostr spamming.</b><br>
 It's main purpose it to download <b>multiple</b> relays list, create nip-05 pubkeys, combine them into one big file called `nostr.json` and of course use thoses accounts to send messages over nostr. <br>
 It's specially usefull for testing relays and spam filters.<br>
 <br>
