@@ -1,5 +1,17 @@
 #!/bin/bash
 
+
+
+# Read the user input   
+  
+echo "Enter the domain where you will be hosting the nostr.json file: "  
+echo "example : gourcetools.github.io"
+read domain  
+
+echo "Enter the relay where you will be broadcasting nip05 informations: "  
+echo "example : relay.nostr.ch"
+read relay  
+
 cd ../../json
 rm -f nostr.json
 
@@ -15,7 +27,7 @@ do
 	pubkey=$(cat ../pubkeys/$file)
 	echo -ne " \"$name\" : \"$(cat $file)\"," >> ../../json/nostr.json
   echo "== Broadcasting NIP05 for $name =="
-	nostril --kind 0 --envelope --sec "$privkey" --content "{\"name\": \"$name\", \"picture\":\"https://thiscatdoesnotexist.com/\", \"nip05\": \"$name@gourcetools.github.io\"}" | websocat wss://relay.nostr.ch
+	nostril --kind 0 --envelope --sec "$privkey" --content "{\"name\": \"$name\", \"picture\":\"https://thiscatdoesnotexist.com/\", \"nip05\": \"$name@$domain\"}" | websocat wss://$relay
 done
 rm -f log.txt
 truncate -s -1 ../../json/nostr.json
