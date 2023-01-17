@@ -22,7 +22,7 @@ It's specially usefull for testing relays and spam filters.<br>
 3) ⌛  $ ./START.sh to open the menu. From here you can start messaging or generate nip05 names using:<br>
 - 1 generate keys
 - 2 make nostr.json
-4) 😃  You should be able to <b>upload</b> nostr.json to your website now. <b>location of nostr.json is /src/json </b> everything is already broadcaster to nostr relays. </b> now.<br>
+4) 😃  You should be able to <b>upload</b> nostr.json to your website now. <b>location of nostr.json is /src/json </b> everything is already broadcaster to nostr relays. </b> WARNING: THIS IS ACTUALLY HARDCODED WITH GOURCETOOLS.GITHUB.IO AS DOMAIN. FIX SOON
 <br>
 
 <br> <br>
