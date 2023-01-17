@@ -1,4 +1,5 @@
 # WORK IN PROGRESS.
+tested with in Ubuntu 22.04.1 LTS
 
 Spamster                         <br>
 <img src="https://img.shields.io/badge/License-MIT-orange.svg"> <br> <br>
