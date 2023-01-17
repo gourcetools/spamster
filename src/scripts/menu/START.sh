@@ -24,7 +24,7 @@ echo "   ├──────────────────────�
 echo "   │    6) Reset Spamster   	              │";
 echo "   │    7) Exit                               │";
 echo "   └──────────────────────────────────────────┘";
-echo -n "    └─> Enter your choice [1-6]:";
+echo -n "    └─> Enter your choice [1-7]:";
 
 # Running a forever loop using while statement
 # This loop will run untill select the exit option.
