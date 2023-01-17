@@ -13,6 +13,7 @@ It's specially usefull for testing relays and spam filters.<br>
 <br>
 
 # <b>⚙️ Requirements:</b><br>
+nostr-tool  nostril truncante
 - `nostr stuff` ... todo: complete this  <br>
 <br>
 
