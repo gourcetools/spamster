@@ -1,6 +1,6 @@
 
 mkdir -p ../../../../multi-spamster
-
+rm -f -r ../../../../multi-spamster/*
 echo "Enter how many bots you want to create below"
 read count
 i=0
