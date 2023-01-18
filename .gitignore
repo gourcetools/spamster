@@ -1,3 +1,6 @@
 
 config/privkeys-list.txt
 src/tmp/rana.txt
+src/tmp/relay
+src/tmp/privkey
+src/tmp/message
