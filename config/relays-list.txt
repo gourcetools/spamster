@@ -1,1 +1,4 @@
-wss://nostr.chaker.net
+wss://relay.nostr.ch
+wss://relay.nostr.com
+wss://relay.nostr.info
+wss://relay.snort.social

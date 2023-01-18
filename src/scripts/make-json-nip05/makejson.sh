@@ -27,7 +27,7 @@ do
 	pubkey=$(cat ../pubkeys/$file)
 	echo -ne " \"$name\" : \"$(cat $file)\"," >> ../../json/nostr.json
   echo "== Broadcasting NIP05 for $name =="
-	nostril --kind 0 --envelope --sec "$privkey" --content "{\"name\": \"$name\", \"picture\":\"https://thiscatdoesnotexist.com/\", \"nip05\": \"$name@$domain\"}" | websocat wss://$relay
+	nostril --kind 0 --envelope --sec "$privkey" --content "{\"name\": \"$name\", \"picture\":\"https://nostr.build/i/5616.jpeg\", \"nip05\": \"$name@$domain\"}" | websocat wss://$relay
 done
 rm -f log.txt
 truncate -s -1 ../../json/nostr.json
