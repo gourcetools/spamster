@@ -1,16 +1,16 @@
 # WORK IN PROGRESS.
 tested with Ubuntu 22.04.1 LTS <br>
 tested with Windows 10 Pro by using WSL Ubuntu 22.04.1 LTS <br>
-tested with Windows 10 Pro : multi-sending wont work because it use gnome terminal emulator. use WSL under Windows10 if you want multi-sending. <br>
-you can find bins you may need here: (use ubuntu folder and copy bins to wsl bin folder) windows bin are for testing.
+tested with Windows 10 Pro : multi-sending wont work because it use gnome terminal emulator. <br>
+use WSL under Windows10 if you want multi-sending. <br>
+you can find bins you may need here: (use ubuntu folder and copy bins to wsl bin folder) windows bin are for testing.<br>
 
+https://github.com/gourcetools/nostr-exe/  <br>
 #Spamster                         
 <br>
 <img src="https://img.shields.io/badge/License-MIT-orange.svg"> <br> <br>
-<img src="https://user-images.githubusercontent.com/120996278/213299682-2d88452d-76d2-4ce0-8e34-c060c0e89612.png"><br>
+ <img src="https://user-images.githubusercontent.com/120996278/213299682-2d88452d-76d2-4ce0-8e34-c060c0e89612.png" alt="Combined" width="500px"> <br> <br>
 
-
-https://github.com/gourcetools/nostr-exe/  <br>
 
 # <b>🍩 What is Spamster?</b><br>
 <br>
