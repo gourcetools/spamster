@@ -1,7 +1,9 @@
 # WORK IN PROGRESS.
-tested with in Ubuntu 22.04.1 LTS
+tested with Ubuntu 22.04.1 LTS <br>
+tested with Windows 10 Pro by using WSL Ubuntu 22.04.1 LTS <br>
 
-Spamster                         <br>
+#Spamster                         
+<br>
 <img src="https://img.shields.io/badge/License-MIT-orange.svg"> <br> <br>
 <img src="https://user-images.githubusercontent.com/120996278/212793118-49adb28a-fce8-4079-aeb6-4b37cc54825d.png"><br>
 

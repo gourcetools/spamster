@@ -1,1 +1,1 @@
-wss://nostr.chaker.net
+wss://relay.nostr.ch
