@@ -4,6 +4,7 @@ tested with Windows 10 Pro by using WSL Ubuntu 22.04.1 LTS <br>
 tested with Windows 10 Pro : multi-sending wont work because it use gnome terminal emulator. <br>
 use WSL under Windows10 if you want multi-sending. <br>
 you can find bins you may need here: (use ubuntu folder and copy bins to wsl bin folder) windows bin are for testing.<br>
+ <img src="https://user-images.githubusercontent.com/120996278/213356808-f640d52f-3df6-4f9b-94b3-ae1fadd8ebc1.png" alt="Combined" width="500px"> <br> <br>
 
 https://github.com/gourcetools/nostr-exe/  <br>
 #Spamster                         
