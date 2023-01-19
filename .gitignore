@@ -6,3 +6,4 @@ src/tmp/privkey
 src/tmp/message
 src/json/nostr.json
 config/pubkeys-list.txt
+src/scripts/ping-relays/relays-list.txt
