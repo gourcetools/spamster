@@ -1,16 +1,27 @@
 
 while true
 do
-./random-privkey.sh
-./random-relay.sh
-./random-message.sh
+../randomizer/random-privkey.sh
+../randomizer/random-relay.sh
+../randomizer/random-message.sh
 ./send.sh
-	echo "Press [CTRL+C] to stop.."
-	echo "Press [CTRL+C] to stop.."
-	echo "Press [CTRL+C] to stop.."
-	echo "Press [CTRL+C] to stop.."
-	echo "Press [CTRL+C] to stop.."
-	echo "Press [CTRL+C] to stop.."
-	echo "Press [CTRL+C] to stop.."
-	echo "Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+	echo "SPAMMING | Press [CTRL+C] to stop.."
+
 done

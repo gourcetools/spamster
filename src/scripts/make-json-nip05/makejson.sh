@@ -11,7 +11,7 @@ read domain
 echo "Enter the relay where you will be broadcasting nip05 informations: "  
 echo "example : relay.nostr.ch"
 read relay  
-
+mkdir -p ../../json
 cd ../../json
 rm -f nostr.json
 
