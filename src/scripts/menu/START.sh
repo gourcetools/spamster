@@ -46,13 +46,11 @@ case $choice in
   1)  echo "== Generate keys for each name ==" 
     cd ../keygen
    ./keygen.sh
-   ./name.sh
   source ../menu/START.sh ;;
   # Pattern 2
   2)  echo "== Generate POW-keys for each name ==" 
     cd ../keygen-pow
    ./keygen-pow.sh
-   ./name.sh
   source ../menu/START.sh ;;
   # Pattern 3
   3)  echo "== Make nostr.json =="
