@@ -21,4 +21,3 @@ timeout 2s nostr-tool -r "$relay" -p "$privkey" send-direct-message --receiver "
 done < ../../../config/pubkeys-list.txt
 
 
-cd ../scripts/sendtext-dm
