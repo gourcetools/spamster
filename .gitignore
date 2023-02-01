@@ -4,5 +4,4 @@ src/keys/
 src/tmp/
 src/json/
 src/scripts/ping-relays/relays-list.txt
-config/channels-list.txt
-config/channels-list.txt
+config/channels-list.*
