@@ -2,6 +2,7 @@
 
 
 
+
 # Read the user input   
   
 echo "Enter the domain where you will be hosting the nostr.json file: "  
