@@ -1,5 +1,13 @@
 #!/bin/bash
 #keygen.sh
+
+
+# Get the number of lines in names-list.txt
+lines=$(wc -l < "../../../config/names-list.txt")
+
+# Start timer
+start_time=$(date +%s)
+
 mkdir -p ../../tmp					
 mkdir -p ../../json				
 mkdir -p ../../keys/pubkeys		
@@ -13,14 +21,14 @@ rm -f ../../keys/pubkeys/*
 rm -f ../../keys/privkeys/*
 
 
-## run command for each name
+## run command for each name in names-list
 while read line
 do
 
 # ===================================================================================== #
 # ===========	Generate a keypair in HEX32 using clust 				#
 # ===================================================================================== #
-echo == Generating keypair for $line ==
+echo " == Generating keypair for $line"
 clust 		generate-keypair > 	../../tmp/Keypair.txt
 # ===================================================================================== #
 # ===========	Split the keypair into Pub.txt and Priv.txt 				#
@@ -72,5 +80,17 @@ do
 done
 cd ../../scripts/keygen
 rm -f ./names.txt
+
+
+
+# End timer
+end_time=$(date +%s)
+
+# Calculate total time
+total_time=$((end_time - start_time))
+
+# Print total time and number of lines
+echo "Total time: $total_time seconds"
+echo "Number of lines in names-list.txt: $lines"
 
 ######

@@ -1,11 +1,166 @@
-- 🇬🇧 Good night 🇬🇧 -
-- 🇫🇷  Bonne nuit 🇫🇷  - 
-- 🇩🇪 Gute Nacht 🇩🇪 - 
-- 🇮🇹 Buona notte 🇮🇹 - 
-- 🇪🇸 Buenas noches 🇪🇸 - 
-- 🇷🇺 Доброй ночи 🇷🇺 - 
-- 🇯🇵 おやすみなさい 🇯🇵 - 
-- 🇨🇳 晚安 🇨🇳 - 
-- 🇹🇷 Günaydın 🇹🇷 - 
-- 🇮🇳 शुभ रात्रि 🇮🇳 - 
-- 🇰🇷 잘 자요 🇰🇷 -
+﻿🇪🇸 Buenas Noches
+🇫🇷 Bonne Nuit
+🇩🇪 Gute Nacht
+🇮🇹 Buona Notte
+🇷🇺 Доброй ночи
+🇵🇹 Boa Noite
+🇳🇱 Goede Nacht
+🇨🇳 晚安
+🇯🇵 おやすみ
+🇨🇿 Dobrou noc
+🇸🇰 Dobrú noc
+🇭🇺 Jó éjszakát
+🇨🇭 Bonne nuitée
+🇱🇻 Labu nakti
+🇱🇹 Labanakt
+🇪🇸 Buenas Noches
+🇵🇭 Magandang gabi
+🇵🇱 Dobranoc
+🇸🇪 God Natt
+🇹🇷 Günaydın
+🇦🇱 Mirëmbrëma
+🇳🇴 God Natt
+🇸🇮 Dobro noč
+🇧🇬 Добър Вечер
+🇩🇰 God Aften
+🇦🇹 Gute Nacht
+🇮🇱 לילה טוב
+🇨🇿 Dobrou noc
+🇨🇦 Bonne nuit
+🇩🇰 God nat
+🇸🇬 晚安
+🇫🇷 Bonne Nuit
+🇮🇹 Buona Notte
+🇳🇱 Goede Nacht
+🇪🇸 Buenas Noches
+🇵🇹 Boa Noite
+🇷🇺 Доброй ночи
+🇮🇹 Buonanotte
+🇵🇱 Dobranoc
+🇬🇧 Good Night:
+🇸🇦  – ليلة سعيدة
+🇪🇹  ቀን እጅ አደር
+🇹🇿  Lala salama
+🇻🇳  Chúc đêm ngon
+🇮🇩  Selamat Malam
+🇰🇪  Olenga na Irio
+🇸🇴  Habeen wanaagsan
+🇰🇷  Lub caij nyoog
+🇹🇭  ราตรีสวัสดิ์
+🇬🇭  Ɛnyɛ ade ase
+🇳🇬  E ku odun ojo
+🇵🇭  Magandang gabi
+🇲🇾  Selamat malam
+🇹🇼  晚安
+🇪🇬  مساء الخير
+🇮🇱  לילה טוב
+🇩🇪  Gute Nacht
+🇹🇷  İyi geceler
+🇨🇳  晚安
+🇨🇴  Buenas noches
+🇸🇪  God natt
+🇦🇫  شب خوش
+🇯🇵  おやすみなさい
+🇫🇷  Bonne nuit
+🇧🇪  Goeienacht
+🇭🇺  Jó éjszakát
+🇨🇦  Bonne nuit
+🇮🇳  शुभ रात्रि
+🇮🇹  Buona notte
+🇩🇰  God nat
+🇵🇹  Boa noite
+🇳🇱  Goedenacht
+🇦🇷  Buenas noches
+🇵🇭  Magandang gabi
+🇨🇳  晚安
+🇻🇳  Chúc đêm ngon
+🇮🇩  Selamat malam
+🇪🇬  مساء الخير
+🇮🇱  לילה טוב
+🇩🇪  Gute Nacht
+🇹🇷  İyi geceler
+🇸🇪  God natt
+🇦🇫  شب خوش
+🇯🇵  おやすみなさい
+🇫🇷  Bonne nuit
+🇧🇪  Goeienacht
+🇭🇺  Jó éjszakát
+🇨🇦  Bonne nuit
+🇮🇳  शुभ रात्रि
+🇮🇹  Buona notte
+🇩🇰  God nat
+🇵🇹  Boa noite
+🇳🇱  Goedenacht
+🇦🇷  Buenas noches
+🇸🇳  حياة سعيدة
+🇩🇴  Bon nwit
+🇵🇰  شب خوش
+🇮🇶  ليلة سعيدة
+🇨🇱  Buenas noches
+🇻🇪  Buenas noches
+🇨🇭  Guete Nacht
+🇯🇵  おやすみなさい
+🇳🇨  Bona nitu
+🇮🇩  Selamat malam
+🇪🇸  Buenas noches
+🇨🇳  晚安
+🇨🇦  Bonne nuit
+🇷🇺  Спокойной ночи
+🇸🇪  God natt
+🇱🇧  ليلة سعيدة 
+🇹🇳  Lila salama
+🇨🇴  Buenas noches
+🇹🇹  Kóonaa níísháá
+🇨🇷  Buenas noches
+🇹🇹  Kona nishaa
+🇲🇦  ليلة سعيدة
+🇬🇹  Bona nit
+🇨🇦  Bonne nuit
+🇸🇪  God natt
+🇵🇱  Dobranoc
+🇮🇳  शुभ रात्रि
+🇪🇸  Buenas noches
+🇨🇮  Bon nwit
+🇨🇰  Kuikona
+🇨🇴  Buenas noches
+🇳🇿  Kia Ora Ra
+🇹🇳  Lila salama
+🇨🇦  Bonne nuit
+🇸🇪  God natt
+🇬🇷  Καληνύχτα
+🇭🇺  Jó éjszakát
+🇮🇱  לילה טוב
+🇪🇸  Buenas noches
+🇮🇹  Buona notte
+🇪🇨  Buenas noches
+🇻🇳  Chúc đêm ngon
+🇵🇭  Magandang gabi
+🇹🇼  晚安
+🇵🇪  Buenas noches
+🇩🇪  Gute Nacht
+🇹🇷  İyi geceler
+🇮🇷  شب خوش
+🇨🇦  Bonne nuit
+🇳🇴  God kveld
+🇸🇳  حياة سعيدة
+🇨🇦  Bonne nuit
+🇸🇪  God natt
+🇹🇹  Kona nishaa
+🇮🇩  Selamat malam
+🇰🇪  Olenga na Irio
+🇸🇴  Habeen wanaagsan
+🇰🇷  Lub caij nyoog
+🇹🇭  ราตรีสวัสดิ์
+🇬🇭  Ɛnyɛ ade ase
+🇳🇬  E ku odun ojo
+🇵🇭  Magandang gabi
+🇲🇾  Selamat malam
+🇹🇼  晚安
+🇪🇬  مساء الخير
+🇮🇱  לילה טוב
+🇷🇺 Доброй ночи 🇷🇺
+🇯🇵 おやすみなさい 🇯🇵
+🇨🇳 晚安 🇨🇳
+🇹🇷 Günaydın 🇹🇷
+🇮🇳 शुभ रात्रि 🇮🇳
+🇰🇷 잘 자요 

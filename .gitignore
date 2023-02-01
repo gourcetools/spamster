@@ -1,9 +1,8 @@
-
-config/privkeys-list.txt
-src/tmp/rana.txt
-src/tmp/relay
-src/tmp/privkey
-src/tmp/message
-src/json/nostr.json
 config/pubkeys-list.txt
+config/privkeys-list.txt
+src/keys/
+src/tmp/
+src/json/
 src/scripts/ping-relays/relays-list.txt
+config/channels-list.txt
+config/channels-list.txt
