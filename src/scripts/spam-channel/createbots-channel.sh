@@ -8,8 +8,6 @@ while (( i++ < $count )); do
 echo "Done making $count bots"
 echo "Lets start them"
 done
-
-
 cd ../../../../multi-spamster
 ls
 for d in ./* ; do

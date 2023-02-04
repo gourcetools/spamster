@@ -1,4 +1,3 @@
-
 while true
 do
 ../randomizer/random-privkey.sh
@@ -23,5 +22,4 @@ do
 	echo "SPAMMING | Press [CTRL+C] to stop.."
 	echo "SPAMMING | Press [CTRL+C] to stop.."
 	echo "SPAMMING | Press [CTRL+C] to stop.."
-
 done

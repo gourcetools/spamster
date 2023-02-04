@@ -11,11 +11,4 @@ cd ../spam-dm
 echo " ======================================================================	"
 timeout 2s nostr-tool -r "$relay" -p "$privkey" send-direct-message --receiver "$line" --message "$message"
 echo " ======================================================================	"
-
-
-
-
-
-
 done < ../../../config/pubkeys-list.txt
-

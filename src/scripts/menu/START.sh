@@ -1,5 +1,5 @@
 unset IP
-IP=$(wget -qO- http://ipecho.net/plain)
+IP=$($tor wget -qO- http://ipecho.net/plain)
 echo "";
 echo "███████████████████████████████████████████████████";
 echo "█─▄▄▄▄█▄─▄▄─██▀▄─██▄─▀█▀─▄█─▄▄▄▄█─▄─▄─█▄─▄▄─█▄─▄▄▀█";
@@ -29,25 +29,22 @@ echo "   │    4) 📢 🌐 Spam global feed                     │";
 echo "   │    5) 📢 📺  Spam public channels                  │";
 echo "   │    6) 📢 💬  Spam  DMs                            │";
 echo "   ├───────────────────────────────────────────────────┤";
-echo "   │    7) 🧅 Enable tor	/ Switch IP                  │";
-echo "   │    8) 🔃 Reset Spamster                           │";
+echo "   │    7) 🧅 ENABLE TOR 	                │";
+echo "   │    8) 🧅 DISABLE TOR	              	│";
+echo "   │    9) 🧅 RESTART TOR (NEW IP)			│";
 echo "   ├───────────────────────────────────────────────────┤";
-echo "   │    9) 🚪 Exit                                     │";
+echo "   │    10) 🔃 Reset Spamster                           │";
+echo "   ├───────────────────────────────────────────────────┤";
+echo "   │    11) 🚪 Exit                                     │";
 echo "   └───────────────────────────────────────────────────┘";
-echo -n "    └─> Enter your choice [1-8]:";
-
-
-
+echo -n "    └─> Enter your choice [1-11]:";
 # Running a forever loop using while statement
 # This loop will run untill select the exit option.
 # User will be asked to select option again and again
-
 while :
 do
-
 # reading choice
 read choice
-
 # case statement is used to compare one value with the multiple cases.
 case $choice in
   
@@ -55,80 +52,82 @@ case $choice in
   0)  echo "📡 Download/update relays list" 
     cd ../dl-relays-list
    ./dl-relays-list.sh
-  source ../menu/START.sh ;;
-
-
+   ../menu/START.sh ;;
   
   # Pattern 1
   1)  echo "== 🔑 (re)Generate keys for each name ==" 
     cd ../keygen
    ./keygen.sh
-  source ../menu/START.sh ;;
+   ../menu/START.sh ;;
   
-
   
   # Pattern 2
   2)  echo "== ⛏️ (re)Generate POW-keys for each name ==" 
     cd ../keygen-pow
    ./keygen-pow.sh
-  source ../menu/START.sh ;;
+   ../menu/START.sh ;;
   
-
   
   # Pattern 3
   3)  echo "== 📁 (re)Make nostr.json + update profiles =="
   cd ../make-json-nip05
    ./makejson.sh
-  source ../menu/START.sh ;;
+   ../menu/START.sh ;;
   
-
   
   # Pattern 4
   4)  echo "== 📢 🌐 Spam global feed =="
   cd ../send-kind1-public
    ./multi-spamster.sh 
-  source ../menu/START.sh ;;
+   ../menu/START.sh ;;
     
-
   
   # Pattern 5
   5)  echo "== 📢 👨‍👩‍👧‍👧 Spam public channels =="
   cd ../multi-spamster
   ./multi-spamster.sh 
-  source ../menu/START.sh ;;
+   ../menu/START.sh ;;
     
-
   
   # Pattern 6
   6)  echo "== 📢 💬 Spam  DMs =="
   cd ../follow
    ./follow.sh 
-  source ../menu/START.sh ;;
+   ../menu/START.sh ;;
   
-
   
   # Pattern 7
-  7)  echo "== 🧅 Enable tor / Switch IP =="
+  7)  echo "== 🧅 ENABLE TOR  =="
   cd ../tor
-   ./tor.sh 
-   torify ../menu/START.sh ;;
+   ./on.sh
+   ../menu/START.sh ;;
+   
+    # Pattern 8
+  8)  echo "== 🧅 DISABLE TOR =="
+  cd ../tor
+   ./off.sh 
+   ../menu/START.sh ;;
+   
+    # Pattern 9
+  9)  echo "== 🧅 RESTART TOR (NEW IP) =="
+  cd ../tor
+   ./restart.sh 
+   ../menu/START.sh ;;
   
-  # Pattern 8
-  8)  echo "== 🔃 Reset Spamster =="
+  # Pattern 10
+  10)  echo "== 🔃 Reset Spamster =="
   cd ../reset
    ./reset.sh 
-  source ../menu/START.sh ;;
+   ../menu/START.sh ;;
   
   
-  # Pattern 9
-  9)  echo "🚪 Exit"
+  # Pattern 11
+  11)  echo "🚪 Exit"
       exit;;
-
   # Default Pattern
   *) echo " ❌ ERROR ❌  "
     echo "    $choice is not a valid number..."
-    echo "     └─> Enter your choice [1-8]:";;
+    echo "     └─> Enter your choice [1-11]:";;
 esac
   echo " "
 done
-
