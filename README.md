@@ -1,16 +1,20 @@
-# WORK IN PROGRESS.
-tested with Ubuntu 22.04.1 LTS <br>
-tested with Windows 10 Pro by using WSL Ubuntu 22.04.1 LTS <br>
-tested with Windows 10 Pro : multi-sending wont work because it use gnome terminal emulator. <br>
-use WSL under Windows10 if you want multi-sending. <br>
-you can find bins you may need here: (use ubuntu folder and copy bins to wsl bin folder) windows bin are for testing.<br>
- <img src="https://user-images.githubusercontent.com/120996278/213356808-f640d52f-3df6-4f9b-94b3-ae1fadd8ebc1.png" alt="Combined" width="500px"> <br> <br>
+Tested in Ubuntu 22.04.1 LTS <br>
+tested with Windows 10 Pro by using *WSL* Ubuntu 22.04.1 LTS <br>
 
+You can find bins you may need here: (use ubuntu folder and copy bins to wsl bin folder) windows bin are for testing.<br>
+ <img src="https://user-images.githubusercontent.com/120996278/213356808-f640d52f-3df6-4f9b-94b3-ae1fadd8ebc1.png" alt="Combined" width="500px"> <br> <br>
 https://github.com/gourcetools/nostr-exe/  <br>
+
 #Spamster                         
 <br>
 <img src="https://img.shields.io/badge/License-MIT-orange.svg"> <br> <br>
- <img src="https://user-images.githubusercontent.com/120996278/213299682-2d88452d-76d2-4ce0-8e34-c060c0e89612.png" alt="Combined" width="500px"> <br> <br>
+ <img src="https://user-images.githubusercontent.com/120996278/216779614-0ffc2b29-5cc0-4e4c-80a7-cd18771efa84.png" alt="Combined" width="500px">  <br>
+ <img src="https://user-images.githubusercontent.com/120996278/216779746-7a46dade-7625-4d97-b61b-e0ac1473786a.png" alt="Combined" width="350px"> <br>
+ <img src="https://user-images.githubusercontent.com/120996278/216779776-3a5fa1a5-421f-43a6-8359-0ef904bfd701.png" alt="Combined" width="350px"> <br>
+ <img src="https://user-images.githubusercontent.com/120996278/216779835-2e9b6563-b44e-4d3e-a1d4-9399c07075f0.png" alt="Combined" width="500px"> <br> <br>
+
+
+
 
 
 # <b>🍩 What is Spamster?</b><br>
