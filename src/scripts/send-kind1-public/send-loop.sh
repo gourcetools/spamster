@@ -16,7 +16,7 @@ echo "		│ Total failed : "$failed"	 "
 echo "		└───────────────────────────────┘"
 echo "Relay: $relay"
 echo "Message: $message"
-$tor timeout 2s nostr-tool -p "$privkey" -r "$relay" text-note -c "$message" 
+$tor timeout 5s nostr-tool -p "$privkey" -r "$relay" text-note -c "$message" 
 if [ $? -eq 124 ]
 then
   failed=$(($failed+1))
