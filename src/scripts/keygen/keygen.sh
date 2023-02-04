@@ -1,6 +1,10 @@
 #!/bin/bash
 # keygen.sh
 
+num_processors=$(grep -c ^processor /proc/cpuinfo)
+xarg_p=$((num_processors - 1))
+echo $xarg_p
+
 # Create directories
 mkdir -p ../../tmp
 mkdir -p ../../json
@@ -20,21 +24,15 @@ lines=$(wc -l < "../../../config/names-list.txt")
 start_time=$(date +%s)
 
 # Run command for each name in names-list.txt
-for line in $(cat ../../../config/names-list.txt)
-do
-    # Generate a keypair in HEX32 using clust
-    echo " Generating keypair for $line"
+cat ../../../config/names-list.txt | xargs -I {} -P $xarg_p sh -c '
+    echo "Generating keypair for {}"
     keypair=$(clust generate-keypair)
+    pubkey=$(echo "$keypair" | grep -Po "(?<=Public key: ).*")
+    privkey=$(echo "$keypair" | grep -Po "(?<=Private key: ).*")
+    echo "$pubkey" > "../../keys/pubkeys/{}.txt"
+    echo "$privkey" > "../../keys/privkeys/{}.txt"
+'
 
-    # Split the keypair into Pub.txt and Priv.txt
-    pubkey=$(echo "$keypair" | grep -Po '(?<=Public key: ).*')
-    privkey=$(echo "$keypair" | grep -Po '(?<=Private key: ).*')
-
-    # Move the key to pubkeys and privkeys folder
-    echo "$pubkey" > "../../keys/pubkeys/$line.txt"
-    echo "$privkey" > "../../keys/privkeys/$line.txt"
-
-done
 
 # Sort privkeys files by name
 cd ../../keys/privkeys
