@@ -19,7 +19,7 @@ do
   	relay=$(shuf -n 1 ../../../config/relays-list.txt)
 	echo -ne " \"$name\" : \"$(cat $file)\"," >> ../../json/nostr.json
   echo "== Broadcasting NIP05 for $name "
-	$tor nostril --kind 0 --envelope --sec "$privkey" --content "{\"name\": \"$name\", \"picture\":\"https://nostr.build/i/5616.jpeg\", \"nip05\": \"$name@$domain\"}" | websocat $relay
+	$tor timeout 5s nostril --kind 0 --envelope --sec "$privkey" --content "{\"name\": \"$name\", \"picture\":\"https://nostr.build/i/5616.jpeg\", \"nip05\": \"$name@$domain\"}" | websocat $relay
 done
 rm -f log.txt
 truncate -s -1 ../../json/nostr.json
