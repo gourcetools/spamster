@@ -6,3 +6,5 @@ src/json/
 src/scripts/ping-relays/relays-list.txt
 config/channels-list.*
 config/relays-list.txt
+config/messages-list.txt
+config/relays-list.txt
