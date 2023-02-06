@@ -1,10 +1,9 @@
-config/pubkeys-list.txt
-config/privkeys-list.txt
 src/keys/
 src/tmp/
 src/json/
-src/scripts/ping-relays/relays-list.txt
-config/channels-list.*
-config/relays-list.txt
+config/channels-list.txt
 config/messages-list.txt
 config/relays-list.txt
+config/pubkeys-list.txt
+config/privkeys-list.txt
+src/scripts/ping-relays/relays-list.txt
