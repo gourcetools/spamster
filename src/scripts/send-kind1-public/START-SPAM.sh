@@ -67,7 +67,7 @@ echo "==========================================================================
 echo "= SENDING TO RELAY: "$relay" | MESSAGE: "$message" "
 echo "= . . . . . . . . . . . . . . . . . . . . . . . . . "
 total=$((total + 1))
-output=$(timeout "$TIMEOUT"s bash -c "nostril --envelope --sec '$privkey' --content 'test-${total//\'/\'\\\'\'}' | websocat $relay")
+output=$(timeout "$TIMEOUT"s bash -c "nostril --envelope --sec '$privkey' --content '${message//\'/\'\\\'\'}' | websocat $relay")
 source ./COUNT.sh
 echo "
 

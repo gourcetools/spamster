@@ -62,6 +62,9 @@ cd ../../../../multi-spamster
 	# Start bot in a x-term emulator tab
 	x-terminal-emulator -e "bash -c './START-SPAM.sh; bash'" &
 else
+  	# Save instance and port number for later use in another script 
+	echo "$number" > NUMBER
+	let "number+=1"
   	x-terminal-emulator -e "bash -c './START-SPAM.sh; bash'" &
 fi
 
