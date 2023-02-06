@@ -45,73 +45,73 @@ read choice
 case $choice in
   
   # Pattern 0
-  0)  echo "📡 Get relays list + benchmark " 
+  0)  echo " == 📡 Get relays list + benchmark " 
     cd ../benchmark-relays
    ./benchmark-relays.sh
    ../menu/START.sh ;;
   
   # Pattern 1
-  1)  echo "== 🔑 (re)Generate keys for each name ==" 
+  1)  echo " == 🔑 (re)Generate keys for each name" 
     cd ../keygen
    ./keygen.sh
    ../menu/START.sh ;;
   
   
   # Pattern 2
-  2)  echo "== ⛏️ (re)Generate POW-keys for each name ==" 
+  2)  echo " == ⛏️ (re)Generate POW-keys for each name" 
     cd ../keygen-pow
    ./keygen-pow.sh
    ../menu/START.sh ;;
   
   
   # Pattern 3
-  3)  echo "== 📁 (re)Make nostr.json + update profiles =="
+  3)  echo " == 📁 (re)Make nostr.json + update profiles"
   cd ../make-json-nip05
    ./makejson.sh
    ../menu/START.sh ;;
   
   
   # Pattern 4
-  4)  echo "== 📢 🌐 Spam global feed =="
+  4)  echo " == 📢 🌐 Spam global feed"
   cd ../send-kind1-public
-   ./multi-spamster.sh 
+   ./CONFIG-SPAM.sh 
    ../menu/START.sh ;;
     
   
   # Pattern 5
-  5)  echo "== 📢 👨‍👩‍👧‍👧 Spam public channels =="
+  5)  echo " == 📢 👨‍👩‍👧‍👧 Spam public channels"
   cd ../multi-spamster
   ./multi-spamster.sh 
    ../menu/START.sh ;;
     
   
   # Pattern 6
-  6)  echo "== 📢 💬 Spam  DMs =="
+  6)  echo " == 📢 💬 Spam  DMs"
   cd ../follow
    ./follow.sh 
    ../menu/START.sh ;;
   
   
   # Pattern 7
-  7)  echo "== 🧅 ENABLE TOR  =="
+  7)  echo " == 🧅 ENABLE TOR "
   cd ../tor
    ./on.sh
    ../menu/START.sh ;;
    
     # Pattern 8
-  8)  echo "== 🧅 DISABLE TOR =="
+  8)  echo " == 🧅 DISABLE TOR"
   cd ../tor
    ./off.sh 
    ../menu/START.sh ;;
    
     # Pattern 9
-  9)  echo "== 🧅 RESTART TOR (NEW IP) =="
+  9)  echo " == 🧅 RESTART TOR (NEW IP)"
   cd ../tor
    ./restart.sh 
    ../menu/START.sh ;;
   
   # Pattern 10
-  10)  echo "== 🔃 Reset Spamster =="
+  10)  echo " == 🔃 Reset Spamster"
   cd ../reset
    ./reset.sh 
    ../menu/START.sh ;;
