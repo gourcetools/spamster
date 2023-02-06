@@ -1,6 +1,10 @@
-" ============================="
-echo " == SPAMSTER RESET == "
-" ============================="
+echo " "
+echo " "
+echo " You asked for it."
+echo " "
+echo " ============================="
+echo " == SPAMSTER RESET STARTED == "
+echo " ============================="
 cd ../../
 echo " = Purging tmp folder"
 cd tmp
@@ -17,7 +21,7 @@ echo " = Purging json"
 cd ../../json
 rm -f *
 cd ../scripts/reset
-" ============================="
+echo " ============================="
 echo " == SPAMSTER RESET DONE == "
-" ============================="
+echo " ============================="
 sleep 5
