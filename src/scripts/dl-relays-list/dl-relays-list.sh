@@ -68,8 +68,8 @@ done <sorted.txt
 rm -f sorted.txt
 # Remove first character wich is a dot left from the pinging... it works.
 sed -i 's/^.//' URLrelays.txt
-# Keep the first 50 lines
-head -n 50 URLrelays.txt > relays-list.txt
+# Keep the first 100 lines
+head -n 100 URLrelays.txt > relays-list.txt
 # Delete URLrelays.txt we dont need it anymore.
 rm -f URLrelays.txt
 # Add back wss:// to relays list
@@ -77,6 +77,7 @@ sed -i 's/^/wss:\/\//' relays-list.txt
 # All done :)
 echo "================================================== "
 echo " 		All done"
-echo "  💾 Saved 50 best relays in: ./config/relays-list.txt "
+echo "  💾 Saved 100 best relays in: ./config/relays-list.txt "
 mv ./relays-list.txt ../../../config
 echo "================================================== "
+rm -f *.txt
