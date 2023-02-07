@@ -3,12 +3,9 @@
 Tested in Ubuntu 22.04.1 LTS <br>
 <img src="https://img.shields.io/badge/License-MIT-orange.svg"> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gourcetools/spamster"> <br>
 <img src="https://img.shields.io/github/issues/gourcetools/spamster"> <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/gourcetools/spamster">
-
 <br>
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gourcetools/spamster"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/gourcetools/spamster"> <br>
-
 <img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/gourcetools/spamster"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/gourcetools/spamster">
-
 
  <img src="https://user-images.githubusercontent.com/120996278/216779614-0ffc2b29-5cc0-4e4c-80a7-cd18771efa84.png" alt="Combined" width="500px">  <br>
  <img src="https://user-images.githubusercontent.com/120996278/216779746-7a46dade-7625-4d97-b61b-e0ac1473786a.png" alt="Combined" width="350px">
