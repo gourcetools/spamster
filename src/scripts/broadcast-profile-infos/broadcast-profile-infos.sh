@@ -35,10 +35,10 @@ ls *.txt | xargs -P $num_cores -I {} bash -c '
     if echo "$result" | grep -q "true"; then
       break
     fi
-    echo "  == 😞 Broadcast failed. We will try again for: $name "
+    echo "  == 😞 Failed for: "$name". We will try again...  "
     relay=$(shuf -n 1 ../../../config/relays-list.txt)
   done
-  echo "  == 😃 DONE broadcasting profile informations for: $name "
+  echo "  == 😃 DONE for: $name "
 '
 
  # End timer
