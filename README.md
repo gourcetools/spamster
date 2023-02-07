@@ -1,6 +1,8 @@
 
 # <b>Spamster</b><br>
-Tested in Ubuntu 22.04.1 LTS <br>
+<img src="https://img.shields.io/badge/Tested%20under-Ubuntu%2022.04.1%20LTS-orange"><br>
+<img src="https://img.shields.io/badge/Tested%20under-W10%pro%running%WSL%-%Ubuntu%2022.04.1%20LTS-blue">
+
 <img src="https://img.shields.io/badge/License-MIT-orange.svg"> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gourcetools/spamster"> <br>
 <img src="https://img.shields.io/github/issues/gourcetools/spamster"> <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/gourcetools/spamster">
 <br>
