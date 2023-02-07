@@ -13,11 +13,9 @@ echo "  -Please be patient if it seems stuck, it's not- "
 echo "  ===============================================  "
 
 
-
 cd ../../keys/pubkeys
 ls *.txt | xargs -P $num_cores -I {} bash -c '
   file={}
-  echo $file
   privkey=$(cat ../privkeys/$file)
   echo $privkey
   relay="wss://relay.nostr.band"
@@ -27,8 +25,8 @@ ls *.txt | xargs -P $num_cores -I {} bash -c '
   		  name=${file%.txt}
   		  contactlist=$(cat ../../../config/contact-list)
   		  echo "  == 🚀 Broadcasting follow list for: $name  to: $relay "
-  		  result=$(timeout 5s nostril --kind 3 --envelope --sec "$privkey" $contactlist | websocat "$relay")
-  		  if echo "$result" | grep -q "true"; then
+  		  result=$(timeout 1s nostr-tool -r $relay -p $privkey publish-contact-list-csv -f ../../../config/contact-list.csv)
+  		  if echo "$result" | grep -q "imported"; then
      		  echo "$result"
      		  echo "  == 😃 DONE for: $name "
      		  break
@@ -49,4 +47,4 @@ echo " ✔️  BROADCASTED ALL FOLLOW INFORMATIONS SUCCESULLY ✔️ "
 echo " 🔃 WE UPDATED $totalacc PROFILES IN "$total_time" SECONDS. 🔁"
  echo "  ===============================================  "
  
- cd ../../scripts/broadcast-contact-list
+cd ../../scripts/broadcast-contact-list
