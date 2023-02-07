@@ -1,2 +1,2 @@
-PUT ONE NAME PER LINE HERE
-EACH NAME IS ONE ACCOUNT
+Spamster-account-1
+Spamster-account-2
