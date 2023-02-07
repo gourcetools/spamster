@@ -7,38 +7,46 @@ echo "  ===============================================  "
 echo "  -Please be patient if it seems stuck, it's not- "
 echo "  ===============================================  "
 
+cd ../../keys/pubkeys
+
 echo "  == Enter the domain you used for NIP-05 file:"
 echo "  == Leave blank to broadcast without NIP-05 info "
 echo "  == Example: gourcetools.github.io"
-read domain
+read nipdomain
+echo $nipdomain > DOMAIN
 
 # Start timer
 start_time=$(date +%s)
 
-cd ../../keys/pubkeys
+
 
 num_cores=$(nproc)
 ls *.txt | xargs -P $num_cores -I {} bash -c '
   file={}
   name=${file%.txt}
-  if [ -z "$domain" ]; then
-    FULLNIP=" "
-  else
-    FULLNIP="$name@$domain"
-  fi
-  privkey=$(cat ../privkeys/$file)
   pubkey=$(cat ../pubkeys/$file)
-  relay=wss://relay.nostr.band
-  while true; do
-    echo "  == 🚀 Broadcasting profile informations for: $name to: $relay "
-    result=$(timeout 5s nostril --kind 0 --envelope --sec "$privkey" --content "{\"name\":\"$name\",\" picture\":\"https://nostr.build/i/5616.jpeg\",\"nip05\":\"$FULLNIP\"}" | websocat "$relay")
-    if echo "$result" | grep -q "true"; then
-      break
+  privkey=$(cat ../privkeys/$file)
+  about="hey-testing-about"
+  DOMAIN=$(cat DOMAIN)
+  echo "DOMAIN: $DOMAIN"
+  echo "NAME: $name"
+  nip=""$name"@"$domain""
+  echo "NIP05: "$nip""
+  relay="wss://relay.nostr.band"
+  echo " broadcast $name $DOMAIN"
+  	while true
+  		do
+  		echo "  == 🚀 Broadcasting profile informations for: "$name"@"$DOMAIN" to: $relay  | $nipname "
+  		result=$(timeout 5s nostril --kind 0 --envelope --sec "$privkey" --content "{\"name\":\"$name\",\"picture\":\"https://nostr.build/i/5616.jpeg\",\"about\":\"$about.\",\"nip05\":\"$name@$DOMAIN\"}" | websocat "$relay")
+  
+  		if echo "$result" | grep -q "true"; then
+     		echo "$result"
+     		echo "  == 😃 DONE for: $name "
+     		break
     fi
     echo "  == 😞 Failed for: "$name". We will try again...  "
     relay=$(shuf -n 1 ../../../config/relays-list.txt)
   done
-  echo "  == 😃 DONE for: $name "
 '
 
  # End timer
