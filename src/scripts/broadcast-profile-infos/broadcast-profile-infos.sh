@@ -28,17 +28,12 @@ ls *.txt | xargs -P $num_cores -I {} bash -c '
   privkey=$(cat ../privkeys/$file)
   about="hey-testing-about"
   DOMAIN=$(cat DOMAIN)
-  echo "DOMAIN: $DOMAIN"
-  echo "NAME: $name"
-  nip=""$name"@"$domain""
-  echo "NIP05: "$nip""
   relay="wss://relay.nostr.band"
   echo " broadcast $name $DOMAIN"
   	while true
   		do
   		echo "  == 🚀 Broadcasting profile informations for: "$name"@"$DOMAIN" to: $relay  | $nipname "
   		result=$(timeout 5s nostril --kind 0 --envelope --sec "$privkey" --content "{\"name\":\"$name\",\"picture\":\"https://nostr.build/i/5616.jpeg\",\"about\":\"$about.\",\"nip05\":\"$name@$DOMAIN\"}" | websocat "$relay")
-  
   		if echo "$result" | grep -q "true"; then
      		echo "$result"
      		echo "  == 😃 DONE for: $name "
@@ -61,3 +56,4 @@ echo " 🔃 WE UPDATED $totalacc PROFILES IN "$total_time" SECONDS. 🔁"
  echo "  ===============================================  "
  
  cd ../../scripts/broadcast-profile-infos
+ rm -f DOMAIN
