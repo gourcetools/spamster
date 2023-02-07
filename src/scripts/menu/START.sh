@@ -17,7 +17,8 @@ echo "   ┌──────────────┴───────�
 echo "   │------------- 📶 RELAYS MANAGEMENT 📶 -------------│";
 echo "   │                                                   │";
 echo "   │  D) 📡 Download relays list                       │";
-echo "   │  P) 🏓 Ping relays list                           │";
+echo "   │  P) 🏓 Download + Ping relays list                │";
+echo "   │  B) 📈 Download + Benchmark relays list           │";
 echo "   │                                                   │";
 echo "   ├───────────────────────────────────────────────────┤";
 echo "   │------------ 🔧 ACCOUNTS MANAGEMENT 🔧 ------------│";
@@ -57,12 +58,16 @@ case $choice in
    ../menu/START.sh ;;
   
   # Pattern Pp
-  [Pp])  echo " == 🏓 Ping relays list" 
+  [Pp])  echo " == 🏓 Download + Ping relays list" 
     cd ../ping-relays-list
    ./ping-relays.sh
    ../menu/START.sh ;;
     
-  
+    # Pattern Bb
+  [Bb])  echo " == 📈 Download + Benchmark relays list" 
+    cd ../benchmark-relays-list
+   ./benchmark-relays.sh
+   ../menu/START.sh ;;
   
   
   # Pattern Kk
