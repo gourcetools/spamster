@@ -1,8 +1,3 @@
-#For each line in "../../../config/relays-list.txt" , try to send 2 messages with same pubkey to line (relay)
-
-
-
-
 # Download a list of nostr relays from nostr.watch
 echo "  == 🌐 Downloading online relays list from nostr.watch "
 curl -s https://api.nostr.watch/v1/online | jq -r '.[]' > relays-list.txt
@@ -72,6 +67,7 @@ done < relays-list.txt
 
 
 # Get relays infos using nip11
+
 while read line; do
 	url="${line:6}"
 	echo "================================="
@@ -126,7 +122,7 @@ echo " "
 
 echo "================================================== "
 echo " 		All done"
-echo "  💾 Saved  relays in: ./config/relays-list.txt "
+echo "  💾 Saved vulnerables relays in: ./config/relays-list.txt "
 cp ./vulnerable-relays.txt ../../../config/relays-list.txt
 echo "================================================== "
 
