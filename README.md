@@ -1,8 +1,8 @@
 
 # <b>Spamster</b><br>
 Tested in Ubuntu 22.04.1 LTS <br>
-<img src="https://img.shields.io/badge/License-MIT-orange.svg"> <img src="https://img.shields.io/github/issues/gourcetools/spamster"><br>
-<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gourcetools/spamster"> <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/gourcetools/spamster">
+<img src="https://img.shields.io/badge/License-MIT-orange.svg"> <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gourcetools/spamster"> <br>
+<img src="https://img.shields.io/github/issues/gourcetools/spamster"> <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/gourcetools/spamster">
 
 <br>
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gourcetools/spamster"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/gourcetools/spamster"> <br>
