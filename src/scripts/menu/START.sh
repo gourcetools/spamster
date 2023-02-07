@@ -8,32 +8,36 @@ echo "   ▀▄▄▄▄▄▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▀�
 echo "     └─> 🌐 https://github.com/gourcetools/spamster ";
 echo "-----------------------------------------------------";
 echo "-------------- 🤖 Welcome to Spamster 🤖 ----------- ";
-echo "---------  Version: 0.1.0 | Liscence: MIT  -----------";
+echo "---------  Version: 0.1.4 | Liscence: MIT  -----------";
 echo "------------ 🧪 FOR RESEARCH USE ONLY 🧪 -------------";
+
 echo "                  ┌─────────────────┐";
 echo "                  │   📜 MAIN MENU  │";
 echo "   ┌──────────────┴─────────────────┴──────────────────┐";
 echo "   ├───────────────────────────────────────────────────┤";
-echo "   │      0) 📡 Download/update relays list            │";
+echo "   │      D) 📡 Download raw relays list               │";
+echo "   │      P) 🏓 Ping relays list         	     │";
+echo "   │      B) 📡 Benchmark relays list                  │";
 echo "   ├───────────────────────────────────────────────────┤";
 echo "   │            🔧 ACCOUNTS MANAGEMENT 🔧              │";
 echo "   ├───────────────────────────────────────────────────┤";
-echo "   │    1) 🔑 Generate keys for each name              │";
-echo "   │ or 2) ⛏️ Generate POW-keys for each name           │";
-echo "   │     3) 📁 Make a nostr.json for nip05   │";
-echo "   │                             + update profiles     │";  
+echo "   │    K) 🔑 Generate keys for each name              │";
+echo "   │ or W) ⛏️ Generate POW-keys for each name           │";
+echo "   │     M) 📁 Make a nostr.json for NIP-05 	       │";
+echo "   │                             & update profiles     │";  
 echo "   ├───────────────────────────────────────────────────┤";
 echo "   │            🕹️ SPAM MANAGEMENT 🕹️                    │";
 echo "   ├───────────────────────────────────────────────────┤";
-echo "   │    4) 📢 🌐 Spam global feed                      │";
-echo "   │    5) 📢 📺  Spam public channels                 │";
-echo "   │    6) 📢 💬  Spam  DMs                            │";
+echo "   │    G) 📢 🌐 Spam Global feed                      │";
+echo "   │    C) 📢 📺  Spam public Channels                 │";
+echo "   │    I) 📢 💬  Spam Inbox                            │";
 echo "   ├───────────────────────────────────────────────────┤";
-echo "   │    10) 🔃 Reset Spamster                          │";
+echo "   │    R) 🔃 Reset Spamster                          │";
 echo "   ├───────────────────────────────────────────────────┤";
-echo "   │    11) 🚪 Exit                                    │";
+echo "   │    X) 🚪 EXIT                                    │";
 echo "   └───────────────────────────────────────────────────┘";
-echo -n "    └─> Enter your choice [1-11]:";
+echo -n "    └─> Enter your choice:";
+
 # Running a forever loop using while statement
 # This loop will run untill select the exit option.
 # User will be asked to select option again and again
@@ -44,86 +48,80 @@ read choice
 # case statement is used to compare one value with the multiple cases.
 case $choice in
   
-  # Pattern 0
-  0)  echo " == 📡 Get relays list + benchmark " 
-    cd ../benchmark-relays
-   ./benchmark-relays.sh
+  # Pattern Dd
+  [Dd])  echo " == 📡 Download raw relays list" 
+    cd ../dl-relays-list
+   ./dl-relays.sh
    ../menu/START.sh ;;
   
-  # Pattern 1
-  1)  echo " == 🔑 (re)Generate keys for each name" 
+  # Pattern Pp
+  [Pp])  echo " == 🏓 Ping relays list" 
+    cd ../ping-relays-list
+   ./ping-relays.sh
+   ../menu/START.sh ;;
+    
+  
+  
+  
+  # Pattern Kk
+  [Kk])  echo " == 🔑 (re)Generate keys for each name" 
     cd ../keygen
    ./keygen.sh
    ../menu/START.sh ;;
   
   
-  # Pattern 2
-  2)  echo " == ⛏️ (re)Generate POW-keys for each name" 
+  # Pattern Ww
+  [Ww])  echo " == ⛏️ (re)Generate POW-keys for each name" 
     cd ../keygen-pow
    ./keygen-pow.sh
    ../menu/START.sh ;;
   
   
-  # Pattern 3
-  3)  echo " == 📁 (re)Make nostr.json + update profiles"
+  # Pattern Mm
+  [Mm])  echo " == 📁 Make nostr.json + update profiles"
   cd ../make-json-nip05
    ./makejson.sh
    ../menu/START.sh ;;
   
   
-  # Pattern 4
-  4)  echo " == 📢 🌐 Spam global feed"
+  # Pattern Gg
+  [Gg])  echo " == 📢 🌐 Spam global feed"
   cd ../send-kind1-public
    ./CONFIG-SPAM.sh 
    ../menu/START.sh ;;
     
   
-  # Pattern 5
-  5)  echo " == 📢 👨‍👩‍👧‍👧 Spam public channels"
+  # Pattern Cc
+  [Cc])  echo " == 📢 👨‍👩‍👧‍👧 Spam public channels"
   cd ../multi-spamster
   ./multi-spamster.sh 
    ../menu/START.sh ;;
     
   
-  # Pattern 6
-  6)  echo " == 📢 💬 Spam  DMs"
+  # Pattern Ii
+  [Ii])  echo " == 📢 💬 Spam  Inbox"
   cd ../follow
    ./follow.sh 
    ../menu/START.sh ;;
   
   
-  # Pattern 7
-  7)  echo " == 🧅 ENABLE TOR "
-  cd ../tor
-   ./on.sh
-   ../menu/START.sh ;;
-   
-    # Pattern 8
-  8)  echo " == 🧅 DISABLE TOR"
-  cd ../tor
-   ./off.sh 
-   ../menu/START.sh ;;
-   
-    # Pattern 9
-  9)  echo " == 🧅 RESTART TOR (NEW IP)"
-  cd ../tor
-   ./restart.sh 
-   ../menu/START.sh ;;
-  
-  # Pattern 10
-  10)  echo " == 🔃 Reset Spamster"
+  # Pattern Rr
+  [Rr])  echo " == 🔃 Reset Spamster"
   cd ../reset
    ./reset.sh 
    ../menu/START.sh ;;
   
   
-  # Pattern 11
-  11)  echo "🚪 Exit"
+  # Pattern Xx
+  [Xx])  echo "🚪 Exit"
       exit;;
+      
   # Default Pattern
-  *) echo " ❌ ERROR ❌  "
-    echo "    $choice is not a valid number..."
-    echo "     └─> Enter your choice [1-11]:";;
+  *) 
+  echo "❌ ERROR ❌  "
+  echo " $choice is not valid..."
+  echo "  └─> Enter your choice:";;
+
 esac
-  echo " "
+echo "."
 done
