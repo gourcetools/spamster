@@ -1,1 +1,1 @@
-ENTER API KEY HERE
+ENTER API KEY HERE: https://platform.openai.com/account/api-keys
