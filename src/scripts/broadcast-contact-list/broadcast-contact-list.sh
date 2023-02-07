@@ -18,14 +18,14 @@ ls *.txt | xargs -P $num_cores -I {} bash -c '
   file={}
   privkey=$(cat ../privkeys/$file)
   echo $privkey
+  
   relay="wss://relay.nostr.band"
   	while true
   		do
   		  file={}
   		  name=${file%.txt}
-  		  contactlist=$(cat ../../../config/contact-list)
   		  echo "  == 🚀 Broadcasting follow list for: $name  to: $relay "
-  		  result=$(timeout 1s nostr-tool -r $relay -p $privkey publish-contact-list-csv -f ../../../config/contact-list.csv)
+  		  result=$(timeout 5s nostr-tool -r $relay -p $privkey publish-contact-list-csv -f ../../../config/contact-list.csv)
   		  if echo "$result" | grep -q "imported"; then
      		  echo "$result"
      		  echo "  == 😃 DONE for: $name "
