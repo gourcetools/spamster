@@ -7,3 +7,4 @@ config/relays-list.txt
 config/pubkeys-list.txt
 config/privkeys-list.txt
 src/scripts/ping-relays/relays-list.txt
+*.json
