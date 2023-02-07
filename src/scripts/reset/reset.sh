@@ -24,4 +24,3 @@ cd ../scripts/reset
 echo " ============================="
 echo " == SPAMSTER RESET DONE == "
 echo " ============================="
-sleep 5
