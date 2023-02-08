@@ -6,6 +6,7 @@
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gourcetools/spamster"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/gourcetools/spamster"> <br>
 <img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/gourcetools/spamster"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/gourcetools/spamster">
 
+- [x] 🧅 Use tor for spamming 
 - [x] 📡 Download relays list
 - [x] 🏓 Ping relays list 
 - [x] 📈 Benchmark relays
@@ -41,7 +42,6 @@ as well as:
 `sed` `jq` `truncante` `awk` `git` `curl`
 
 
-... todo: complete this  <br>
 <br>
 
 # <b>✔️ How to use Spamster?</b><br>
@@ -59,7 +59,7 @@ as well as:
 
 
 
- <img src="https://user-images.githubusercontent.com/120996278/216779614-0ffc2b29-5cc0-4e4c-80a7-cd18771efa84.png" alt="Combined" width="500px">  <br>
+ <img src="https://user-images.githubusercontent.com/120996278/217402497-30ca7627-f0be-44bf-aff9-f990977743b1.png" alt="Combined" width="500px">  <br>
  <img src="https://user-images.githubusercontent.com/120996278/216779746-7a46dade-7625-4d97-b61b-e0ac1473786a.png" alt="Combined" width="350px">
  <img src="https://user-images.githubusercontent.com/120996278/216779776-3a5fa1a5-421f-43a6-8359-0ef904bfd701.png" alt="Combined" width="350px"> <br>
  <img src="https://user-images.githubusercontent.com/120996278/216779835-2e9b6563-b44e-4d3e-a1d4-9399c07075f0.png" alt="Combined" width="500px"> <br> 
