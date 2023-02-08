@@ -45,9 +45,9 @@ as well as:
 <br>
 
 # <b>✔️ How to use Spamster?</b><br>
-1) 📜  Open <b>config</b> and replace </b>message-list.txt</b> with your messages - one per line.<br>
+1) 📜  Open <b>./config</b> and replace </b>message-list.txt</b> with your messages - one per line.<br>
 2) 🧰  Open <b>names-list.txt</b> and do the same, for names. <br>
-3) ⌛  $ ./START.sh to open the menu. From here you can start messaging or generate nip05 names using:<br>
+3) ⌛  $ ./SPAMSTER.sh to open the menu. From here you can start messaging or generate nip05 names using:<br>
 - 1 generate keys
 - 2 make nostr.json
 4) 😃  You should be able to <b>upload</b> nostr.json to your website now. <b>location of nostr.json is /src/json </b> everything is already broadcasted to nostr relays. </b> 
