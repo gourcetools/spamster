@@ -32,9 +32,19 @@ done
 
 # Ask for how many bots he want to make
 echo " == 🤖 Enter how many bots you want to create:"
+while true; do
+  read count
+  if [[ $count =~ ^[1-9][0-9]{0,2}$ ]]; then
+    break
+  elif [[ $count -gt 500 ]]; then
+    echo "Error: too much."
+  else
+    echo "Error: only numbers between 1 and 500 are allowed."
+  fi
+done
 
 
-read count
+
 while (( i++ < $count )); do
   # Create bots
   cp -r "../../../../spamster" "../../../../multi-spamster/spamster$i"
