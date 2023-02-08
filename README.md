@@ -62,9 +62,6 @@ as well as:
 - Download relay list (D)
 - Generate keys (K)
 - Start spamming
-4) 😃  You should be able to <b>upload</b> nostr.json to your website now. <b>location of nostr.json is /src/json </b> everything is already broadcasted to nostr relays. </b> 
-
-
 
 
 
