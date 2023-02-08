@@ -24,6 +24,9 @@
 - [ ] Spam in dm
 - [ ] Spam custom KIND
 - [ ] Spam in channels
+- [ ] Spam public channels creation 
+- [ ] Spam recommand relay 
+- [ ] Multi-Spam
 - [ ] React and reply
 - [ ] Reply
 - [ ] Save config lists 
@@ -35,7 +38,8 @@
 - [ ] Use tor to broadcast profile info  | KIND: 0
 - [ ] Use tor to broadcast follow list  | KIND: 3
 - [ ] Change benchmark for something more agressive.
-
+- [ ] Engagement farm
+- [ ] OPENAI Support
 
 # <b>🍩 What is Spamster?</b><br>
 <br>
