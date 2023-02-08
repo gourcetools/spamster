@@ -6,6 +6,7 @@
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gourcetools/spamster"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/gourcetools/spamster"> <br>
 <img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/gourcetools/spamster"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/gourcetools/spamster">
 
+# Done:
 - [x] 🧅 Use tor for spamming 
 - [x] 📡 Download relays list
 - [x] 🏓 Ping relays list 
@@ -15,14 +16,25 @@
 - [x] Send the nostr.json to github.
 - [x] ℹ️ Update all accounts informations with NIP-05 domain | KIND 0
 - [x] ℹ️ Update all accounts informations with username,image,and bio | KIND 0
-- [x] 🫂 Make accounts follow each others | KIND 3
-- [x] 📢 Spam public feed in parallel | KIND 1 
+- [x] 🫂 Make accounts follow each others | KIND: 3
+- [x] 📢 Spam public feed in parallel | KIND: 1 
 - [x] Spam public feed using tor in parallel (one exit IP per instance) | KIND 1 
 
+# Todo:
 - [ ] Spam in dm
+- [ ] Spam custom KIND
 - [ ] Spam in channels
 - [ ] React and reply
+- [ ] Reply
+- [ ] Save config lists 
+- [ ] Load config lists 
 - [ ] React and reply with OPENAI
+- [ ] Use tor to get relays list
+- [ ] Use tor to ping relays list
+- [ ] Use tor to benchmark relays list
+- [ ] Use tor to broadcast profile info  | KIND: 0
+- [ ] Use tor to broadcast follow list  | KIND: 3
+- [ ] Change benchmark for something more agressive.
 
 
 # <b>🍩 What is Spamster?</b><br>
@@ -54,10 +66,9 @@ as well as:
 
 <br> <br>
 <br>
-🙋‍♂️ Need help? Telegram: <b>@bitpaint</b> | Twitter: <b>@bitpaintclub<br></b>
-
-
-
+🙋‍♂️ Need help? Telegram: <b>t.me/bitpaint</b> | Twitter: <b>https://twitter.com/bitpaintclub<br></b><br>
+Nostr: npub1qqqqqhxytpngrtvw0a9h2sm0k7gykr35lurjhv6qdhdeqgnd064swghgx4 <br>
+gourcetools@gourcetools.github.io
 
  <img src="https://user-images.githubusercontent.com/120996278/217402497-30ca7627-f0be-44bf-aff9-f990977743b1.png" alt="Combined" width="500px">  <br>
  <img src="https://user-images.githubusercontent.com/120996278/216779746-7a46dade-7625-4d97-b61b-e0ac1473786a.png" alt="Combined" width="350px">
