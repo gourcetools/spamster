@@ -1,7 +1,7 @@
 # <b>SPAMSTER</b><br>
 <img src="https://img.shields.io/badge/Tested%20under-Ubuntu%2022.04.1%20LTS-orange"> <img src="https://img.shields.io/badge/Tested%20under-W10%20Pro%20WSL%20Ubuntu%2022.04.1%20LTS-blue"><br>
-<img src="https://img.shields.io/badge/License-MIT-orange.svg"> <img alt="GitHub top language" 
-                                                                     
+<img src="https://img.shields.io/badge/License-MIT-orange.svg">
+
 # Done:
 - [x] 🧅 Use tor for spamming 
 - [x] 📡 Download relays list
