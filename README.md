@@ -66,8 +66,11 @@ as well as:
 
 <br> <br>
 <br>
-🙋‍♂️ Need help? Telegram: <b>t.me/bitpaint</b> | Twitter: <b>https://twitter.com/bitpaintclub<br></b><br>
-Nostr: npub1qqqqqhxytpngrtvw0a9h2sm0k7gykr35lurjhv6qdhdeqgnd064swghgx4 <br>
+# 🙋‍♂️ Need help? <br> 
+ <b><Telegram:</b> https://t.me/bitpaint<br>
+<b>Twitter:</b> https://twitter.com/bitpaintclub<br>
+<b>Nostr:</b><br>
+npub1qqqqqhxytpngrtvw0a9h2sm0k7gykr35lurjhv6qdhdeqgnd064swghgx4<br>
 gourcetools@gourcetools.github.io
 
  <img src="https://user-images.githubusercontent.com/120996278/217402497-30ca7627-f0be-44bf-aff9-f990977743b1.png" alt="Combined" width="500px">  <br>
