@@ -14,12 +14,10 @@ echo "  == ❌ Download failed, restarting...  "
 fi
 
 # Clean shit
-echo "Clean shit"
 grep -v "npub" relays-list.txt > relays-list.tmp && mv relays-list.tmp relays-list.txt
 
 
 # Benchmark
-echo "Benchmark"
 
 
 while read line; do
