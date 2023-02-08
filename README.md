@@ -6,6 +6,7 @@
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gourcetools/spamster"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/gourcetools/spamster"> <br>
 <img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/gourcetools/spamster"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/gourcetools/spamster">
 
+- [x] 🧅 Use tor for spamming 
 - [x] 📡 Download relays list
 - [x] 🏓 Ping relays list 
 - [x] 📈 Benchmark relays
