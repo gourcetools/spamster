@@ -56,9 +56,16 @@ as well as:
 <br>
 
 # <b>✔️ How to use Spamster?</b><br>
-1) 📜  Open <b>./config</b> and replace </b>message-list.txt</b> with your messages - one per line.<br>
-2) 🧰  Open <b>names-list.txt</b> and do the same, for names. <br>
-3) ⌛  $ ./SPAMSTER.sh to open the menu. For a quick try:<br>
+
+- `git clone https://github.com/gourcetools/spamster`
+- `cd ./spamster`
+- `cd ./config`
+- Edit </b>message-list.txt</b> with your messages - one per line.<br>
+- Edit <b>names-list.txt</b> and do the same, for names. <br>
+- `cd ..`
+- `./SPAMSTER.sh` to open the menu. 
+
+# For a quick try:<br>
 - Download relay list (D)
 - Generate keys (K)
 - Start spamming
