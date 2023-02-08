@@ -19,7 +19,8 @@ ls *.txt | xargs -P $num_cores -I {} bash -c '
   privkey=$(cat ../privkeys/$file)
   echo $privkey
   
-  relay="wss://relay.nostr.band"
+  # relay="wss://relay.nostr.band"
+  relay=$(shuf -n 1 ../../../config/relays-list.txt)
   	while true
   		do
   		  file={}
