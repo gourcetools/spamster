@@ -21,7 +21,7 @@
 - [ ] Spam in dm
 - [ ] Spam in channels
 - [ ] React and reply
-- [ ] React and reply
+- [ ] React and reply with OPENAI
 
 
 # <b>🍩 What is Spamster?</b><br>
