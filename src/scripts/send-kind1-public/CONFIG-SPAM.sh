@@ -15,6 +15,7 @@ rm -f -r ../../../../multi-spamster/*
 
 
 # Check if needed config-files are present
+echo "  ======================================== "
 files=("../../../config/relays-list.txt" "../../../config/messages-list.txt" "../../../config/privkeys-list.txt")
 echo " == 🔎 Checking configuration files "
 for file in "${files[@]}"; do
@@ -24,10 +25,15 @@ for file in "${files[@]}"; do
     echo " == 👌 OK: $name found."
   else
     echo " == ❌ Error: $name not found in ./config folder. Please fix this."
+    sleep 3
+    source ../menu/START.sh
   fi
+  
 done
 
-
+echo "  ======================================== "
+echo "     ✅ CONFIG FILES OK ✅ "
+echo "  ======================================== "
 
 
 
