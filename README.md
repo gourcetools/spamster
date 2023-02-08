@@ -41,7 +41,6 @@ as well as:
 `sed` `jq` `truncante` `awk` `git` `curl`
 
 
-... todo: complete this  <br>
 <br>
 
 # <b>✔️ How to use Spamster?</b><br>
