@@ -28,22 +28,20 @@ while true; do
     esac
 done
 
-
-
-# Ask for how many bots he want to make
+# Ask for how many bots he wants to make
 echo " == 🤖 Enter how many bots you want to create:"
 while true; do
   read count
   if [[ $count =~ ^[1-9][0-9]{0,2}$ ]]; then
-    break
-  elif [[ $count -gt 500 ]]; then
-    echo "Error: too much."
+    if [[ $count -gt 250 ]]; then
+      echo " == Error: That's not a good idea... Enter a number between 1 and 250."
+    else
+      break
+    fi
   else
-    echo "Error: only numbers between 1 and 500 are allowed."
+    echo " == Error: only numbers between 1 and 500 are allowed."
   fi
 done
-
-
 
 while (( i++ < $count )); do
   # Create bots
