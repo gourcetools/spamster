@@ -6,29 +6,42 @@
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gourcetools/spamster"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/gourcetools/spamster"> <br>
 <img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/gourcetools/spamster"> <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/gourcetools/spamster">
 
-- [x] Create accounts for each name in config/name-list.txt 
-- [x] Create a nostr.json | NIP-05
-- [x] Update account informations with NIP-05 domain | KIND 0
-- [x] Update account informations with username,image,and bio | KIND 0
-- [x] Make accounts follow each others | KIND 3
-- [x] Spam public feed in parallel | KIND 1 
+- [x] 📡 Download relays list
+- [x] 🏓 Ping relays list 
+- [x] 📈 Benchmark relays
+- [x] 🔑 Create accounts for each name in config/name-list.txt 
+- [x] 📁 Create a nostr.json with all accounts in it. | NIP-05
+- [x] Send the nostr.json to github.
+- [x] ℹ️ Update all accounts informations with NIP-05 domain | KIND 0
+- [x] ℹ️ Update all accounts informations with username,image,and bio | KIND 0
+- [x] 🫂 Make accounts follow each others | KIND 3
+- [x] 📢 Spam public feed in parallel | KIND 1 
 - [x] Spam public feed using tor in parallel (one exit IP per instance) | KIND 1 
+
 - [ ] Spam in dm
 - [ ] Spam in channels
-
-
+- [ ] React and reply
+- [ ] React and reply
 
 
 # <b>🍩 What is Spamster?</b><br>
 <br>
 <b>Spamster is a toolbox made for nostr spamming.</b><br>
-It's main purpose it to download <b>multiple</b> relays list, create nip-05 pubkeys, combine them into one big file called `nostr.json` and of course use thoses accounts to send messages over nostr. <br>
-It's specially usefull for testing relays and spam filters.<br>
+Spamster is for testing relays and spam filters.<br>
 <br>
 
 # <b>⚙️ Requirements:</b><br>
-nostr-tool  nostril truncante
-- `nostr stuff` ... todo: complete this  <br>
+
+- `nostr-tool` : https://github.com/0xtrr/nostr-tool
+- `nostril` : https://github.com/jb55/nostril
+- `clust` : https://github.com/vinliao/clust
+- `nostcat` : https://github.com/blakejakopovic/nostcat
+
+as well as: 
+`sed` `jq` `truncante` `awk` `git` `curl`
+
+
+... todo: complete this  <br>
 <br>
 
 # <b>✔️ How to use Spamster?</b><br>
