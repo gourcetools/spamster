@@ -60,13 +60,14 @@ as well as:
 - `git clone https://github.com/gourcetools/spamster`
 - `cd ./spamster`
 - `cd ./config`
-- Edit </b>message-list.txt</b> with your messages - one per line.<br>
-- Edit <b>names-list.txt</b> and do the same, for names. <br>
+- Edit `message-list.txt` with your messages - one per line.
+- Edit `names-list.txt` and do the same. 
+- For relay if you want to set a custom relay edit `relays-list.txt` 
 - `cd ..`
 - `./SPAMSTER.sh` to open the menu. 
 
 # For a quick try:<br>
-- Download relay list (D)
+- Download relay list (D) (skip this if you set a custom relay before)
 - Generate keys (K)
 - Start spamming
 
