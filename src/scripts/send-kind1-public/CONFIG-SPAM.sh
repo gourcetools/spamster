@@ -14,6 +14,25 @@ rm -f -r ../../../../multi-spamster/*
 
 
 
+# Check if needed config-files are present
+files=("../../../config/relays-list.txt" "../../../config/messages-list.txt" "../../../config/privkeys-list.txt")
+echo " == 🔎 Checking configuration files "
+for file in "${files[@]}"; do
+    filename=$(basename "$file")
+    name="${filename%.*}"
+  if [ -f $file ]; then
+    echo " == 👌 OK: $name found."
+  else
+    echo " == ❌ Error: $name not found in ./config folder. Please fix this."
+  fi
+done
+
+
+
+
+
+
+
 # Ask user we he want to use tor
 while true; do
     read -p "
