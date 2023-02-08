@@ -34,6 +34,7 @@ ls *.txt | xargs -P $num_cores -I {} bash -c '
     fi
     echo "  == 😞 Failed for: "$name". We will try again...  "
     relay=$(shuf -n 1 ../../../config/relays-list.txt)
+    sleep 1
   done
 '
 
