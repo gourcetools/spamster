@@ -2,12 +2,9 @@
 echo "CONFIGURATION-SAVER"
 echo "Config name:"
 read CONFIGNAME
-mkdir -p  ../../../configs/
-rm -f -d -r ../../../configs/$CONFIGNAME
 
+rm -f -d -r ../../../../spamster-configs/$CONFIGNAME
+mkdir -p  ../../../../spamster-configs/$CONFIGNAME
+cp -d -r ../../../../spamster/* ../../../../spamster-configs/$CONFIGNAME/
 
-mkdir -p  ../../../configs/$CONFIGNAME
-cp -d -r ../../../config/ ../../../configs/$CONFIGNAME
-mkdir -p  ../../../configs/$CONFIGNAME/src/keys
-cp -r ../../../src/keys ../../../configs/$CONFIGNAME/src/keys
 echo "SAVED $CONFIGNAME."
