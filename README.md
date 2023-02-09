@@ -38,6 +38,15 @@
 - [ ] Change benchmark for something more agressive.
 - [ ] Engagement farm with OPENAI
 
+
+
+
+# Problems:
+
+- Tor dont stop on close. So you have to stop all tors manually.
+- As far as i understand, this whole repo could be almost one script with functions, but because i'm really bad at this: its' not.
+
+
 # <b>🍩 What is Spamster?</b><br>
 <br>
 <b>Spamster is a toolbox made for nostr spamming.</b><br>
