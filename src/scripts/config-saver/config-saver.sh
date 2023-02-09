@@ -25,4 +25,4 @@ echo "       	Saved $CONFIGNAME"
 echo "       	succesfully."
 echo " "
 echo " "
-sleep 1
+sleep 2
