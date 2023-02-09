@@ -43,10 +43,12 @@ cat ../../../config/names-list.txt | xargs -I {} -P $xarg_p sh -c '
     echo "$pubkey" > "../../keys/pubkeys/{}.txt"
     echo "$privkey" > "../../keys/privkeys/{}.txt"
 '
-# Sort privkeys files by name
+
+# Export all privkeys to privkeys-list.txt
 cd ../../keys/privkeys
 find . -type f -name '*.txt' -print0 | sort -z | xargs -0 cat > ../../../config/privkeys-list.txt
 cd ../../scripts/keygen
+
 
 # End timer
 end_time=$(date +%s)
@@ -62,5 +64,4 @@ echo "       ──── ─   │││ ││││├┤   │  ─ ──�
 echo "          /│\  ─┴┘└─┘┘└┘└─┘  o  /│\   "
 echo "       	Generated $lines keys"
 echo "       	in $total_time seconds."
-sleep 1
-
+sleep 2
