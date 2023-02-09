@@ -14,8 +14,8 @@
 - [x] 🫂 Make all accounts follow each others | `KIND: 3`
 - [x] 📢 Spam public feed in parallel | `KIND: 1`
 - [x] 🧅 Spam public feed using tor in parallel (one exit IP per instance) | `KIND: 1 `
-- [x] Save config lists 
-- [x] Load config lists 
+- [x] ⬆️  Save config lists 
+- [x] ⬇️  Load config lists 
 - [x] 🗑 Reset
 
 # Todo:
