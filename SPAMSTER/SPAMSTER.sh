@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ./SPAMSTER
+
 
 # Check if "clust" is installed
 echo " == 🤔 Checking if clust is installed "
