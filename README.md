@@ -1,5 +1,13 @@
+#
+
 # <b>SPAMSTER</b><br>
-<img src="https://img.shields.io/badge/Tested%20under-Ubuntu%2022.04.1%20LTS-orange"> <img src="https://img.shields.io/badge/Tested%20under-W10%20Pro%20WSL%20Ubuntu%2022.04.1%20LTS-blue"> <img src="https://img.shields.io/badge/License-MIT-orange.svg">
+![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+#
+<img src="https://img.shields.io/badge/Tested%20under-Ubuntu%2022.04.1%20LTS-orange"><br>
+<img src="https://img.shields.io/badge/Tested%20under-W10%20Pro%20WSL%20Ubuntu%2022.04.1%20LTS-blue">
+<br><br>
+<img src="https://img.shields.io/badge/License-MIT-orange.svg"><br>
+
 
 # Done:
 - [x] 🧅 Use tor for spamming 
@@ -14,6 +22,8 @@
 - [x] 🫂 Make all accounts follow each others | `KIND: 3`
 - [x] 📢 Spam public feed in parallel | `KIND: 1`
 - [x] 🧅 Spam public feed using tor in parallel (one exit IP per instance) | `KIND: 1 `
+- [x] ⬆️  Save configuration 
+- [x] ⬇️  Load configuration
 - [x] 🗑 Reset
 
 # Todo:
@@ -25,8 +35,8 @@
 - [ ] Multi-Spam
 - [ ] React and reply
 - [ ] Reply
-- [ ] Save config lists 
-- [ ] Load config lists 
+- [ ] Create random names lists with first and last name
+- [ ] Create random bio for each name with OPENAI
 - [ ] React and reply with OPENAI
 - [ ] Use tor to get relays list
 - [ ] Use tor to ping relays list
@@ -34,12 +44,20 @@
 - [ ] Use tor to broadcast profile info  | `KIND: 0`
 - [ ] Use tor to broadcast follow list  | `KIND: 3`
 - [ ] Change benchmark for something more agressive.
-- [ ] Engagement farm
-- [ ] OPENAI Support
+- [ ] Engagement farm with OPENAI
+
+
+
+
+# Problems:
+
+- Tor dont stop on close. So you have to stop all tors manually.
+- As far as i understand, this whole repo could be almost one script with functions, but because i'm really bad at this: its' not.
+
 
 # <b>🍩 What is Spamster?</b><br>
 <br>
-<b>Spamster is a toolbox made for nostr spamming.</b><br>
+<b>Spamster is a bash toolbox made for nostr spamming.</b><br>
 Spamster is for testing relays and spam filters.<br>
 <br>
 
@@ -75,9 +93,9 @@ as well as:
 
 
 
- <img src="https://user-images.githubusercontent.com/120996278/217402497-30ca7627-f0be-44bf-aff9-f990977743b1.png" alt="Combined" width="500px">  <br>
- <img src="https://user-images.githubusercontent.com/120996278/216779746-7a46dade-7625-4d97-b61b-e0ac1473786a.png" alt="Combined" width="350px">
- <img src="https://user-images.githubusercontent.com/120996278/216779776-3a5fa1a5-421f-43a6-8359-0ef904bfd701.png" alt="Combined" width="350px"> <br>
+ <img src="https://user-images.githubusercontent.com/120996278/217899237-62d0bf25-8417-44c8-9730-7f452d2d7a0b.png" alt="Combined" width="500px">  <br>
+ <img src="https://user-images.githubusercontent.com/120996278/217901199-305644a8-7c8f-4358-9388-614668983900.png" alt="Combined" height="70px">
+ <img src="https://user-images.githubusercontent.com/120996278/217901110-887bfb88-a1ad-4ab7-8e3c-23424afb1eb3.png" alt="Combined" height="70px"> <br>
  <img src="https://user-images.githubusercontent.com/120996278/217404959-b4d81910-6f8b-404c-a0e2-f5519bdcc391.png" alt="Combined" width="500px"> <br> 
 
 
