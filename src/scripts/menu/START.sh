@@ -8,7 +8,7 @@ echo "   ▀▄▄▄▄▄▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▀�
 echo "     └─> 🌐 https://github.com/gourcetools/spamster ";
 echo " ";
 echo "-------------- 🤖 Welcome to Spamster 🤖 ----------- ";
-echo "---------  Version: 0.1.6 | Liscence: MIT  -----------";
+echo "---------  Version: 0.1.7 | Liscence: MIT  -----------";
 echo "------------ 🧪 FOR RESEARCH USE ONLY 🧪 -------------";
 echo " ";
 echo "                  ┌─────────────────┐";
@@ -35,6 +35,10 @@ echo "   │                                                   │";
 echo "   │  1) 📢 🌐 Spam Global feed              | KIND:1  │";
 echo "   │                                                   │";
 echo "   ├───────────────────────────────────────────────────┤";
+echo "   │----------------- ⚙️  SETTINGS ⚙️  ------------------│";
+echo "   │                                                   │";
+echo "   │  S) ⬆️  SAVE config                                │";
+echo "   │  L) ⬇️  LOAD config                                │";
 echo "   │  R) 🔃 RESET Spamster                             │";
 echo "   │                                                   │";
 echo "   │  X) 🚪 EXIT                                       │";
@@ -126,6 +130,22 @@ case $choice in
   cd ../follow
    ./follow.sh 
    ../menu/START.sh ;;
+  
+  
+    # Pattern Rr
+  [Ss])  echo " == ⬆️ Save configuration"
+  cd ../config-saver
+   ./config-saver.sh 
+   ../menu/START.sh ;;
+   
+   
+     # Pattern Rr
+  [Ll])  echo " == ⬇️ Load configuration"
+  cd ../config-loader
+   ./config-loader.sh
+   ../menu/START.sh ;;
+  
+  
   
   
   # Pattern Rr
