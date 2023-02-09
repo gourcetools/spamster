@@ -1,12 +1,20 @@
 #!/bin/bash
 # keygen.sh
+clear
+echo " "
+echo " "
+echo "          \│/  ┬┌─┌─┐┬ ┬┌─┐┌─┐┌┐┌  \│/   ";
+echo "       ──── ─  ├┴┐├┤ └┬┘│ ┬├┤ │││  ─ ────";
+echo "          /│\  ┴ ┴└─┘ ┴ └─┘└─┘┘└┘  /│\   ";
+echo " "
+echo " "
+sleep 1
 
 # Start timer
 start_time=$(date +%s)
 
 num_processors=$(grep -c ^processor /proc/cpuinfo)
 xarg_p=$((num_processors - 1))
-echo $xarg_p
 
 # Create directories
 mkdir -p ../../tmp
@@ -28,7 +36,7 @@ lines=$(wc -l < "../../../config/names-list.txt")
 
 # Run keygen command for each name in names-list.txt
 cat ../../../config/names-list.txt | xargs -I {} -P $xarg_p sh -c '
-    echo "Generating keypair for {}"
+    echo "  == 🔑 🗝️ Generating keypair for {}"
     keypair=$(clust generate-keypair)
     pubkey=$(echo "$keypair" | grep -Po "(?<=Public key: ).*")
     privkey=$(echo "$keypair" | grep -Po "(?<=Private key: ).*")
@@ -47,5 +55,12 @@ end_time=$(date +%s)
 total_time=$((end_time - start_time))
 
 # Print total time and number of lines
-echo "= Done :)
-= Created $lines accounts in $total_time seconds."
+echo " "
+echo " "
+echo "          \│/  ┌┬┐┌─┐┌┐┌┌─┐  ┬  \│/   "
+echo "       ──── ─   │││ ││││├┤   │  ─ ────"
+echo "          /│\  ─┴┘└─┘┘└┘└─┘  o  /│\   "
+echo "       	Generated $lines keys"
+echo "       	in $total_time seconds."
+sleep 1
+
