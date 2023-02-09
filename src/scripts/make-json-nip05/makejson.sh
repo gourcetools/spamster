@@ -44,7 +44,8 @@ echo -e "}"						>> ../../json/nostr.json
 ## Finish writing nostr.json 
 
 
-# Print total time and number of lines
+
+# Echo instructions 
 echo " "
 echo " "
 echo "          \│/  ┌┬┐┌─┐┌┐┌┌─┐  ┬  \│/   "
@@ -59,8 +60,8 @@ echo " "
 sleep 1
 
 
-
-
-# Navigate and echo instructions 
 cd ../../scripts/make-json-nip05
+
+
+
 

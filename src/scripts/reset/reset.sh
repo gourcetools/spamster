@@ -1,12 +1,17 @@
 
 while true; do
-  read -p " == Are you sure you want to delete all accounts,relays,nostr.json files? [y/n] " choice
+  read -p "
+    == Are you sure you want to delete:
+    == ALL: accounts,relays,nostr.json files? 
+    == Answer: [y/n] " choice
   if [[ $choice == "y" || $choice == "Y" ]]; then
     echo " == Oki doki..."
+    sleep 1
     # continue with the rest of the script
     break
   elif [[ $choice == "n" || $choice == "N" ]]; then
     echo " == I knew it :P "
+    sleep 1
     source ../menu/START.sh
     break
   else
@@ -14,7 +19,8 @@ while true; do
   fi
 done
 
-
+echo " "
+echo " "
 echo " ============================="
 echo " == SPAMSTER RESET STARTED == "
 echo " ============================="
@@ -23,11 +29,11 @@ echo " = Purging tmp folder"
 cd tmp
 rm -f *
 cd ..
-echo " =  🗑️ Purging pubkeys folder"
+echo " =  🗑️ Deleting stuff in pubkeys folder"
 cd keys/pubkeys
 rm -f *
 cd ..
-echo " =  🗑️ Purging privkeys folder"
+echo " =  🗑️ Deleting stuff in privkeys folder"
 cd privkeys
 rm -f *
 echo " =  🗑️ Deleting nostr.json"
@@ -45,3 +51,4 @@ cd ../src/scripts/reset
 echo " ============================="
 echo " == 🚮 SPAMSTER RESET DONE 🚮 == "
 echo " ============================="
+    sleep 1
