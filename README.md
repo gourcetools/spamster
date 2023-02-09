@@ -7,18 +7,19 @@
 - [x] 🏓 Ping relays list 
 - [x] 📈 Benchmark relays
 - [x] 🔑 Create accounts for each name in config/name-list.txt 
-- [x] 📁 Create a nostr.json with all accounts in it. | NIP-05
-- [x] Send the nostr.json to github.
-- [x] ℹ️ Update all accounts informations with NIP-05 domain | KIND 0
-- [x] ℹ️ Update all accounts informations with username,image,and bio | KIND 0
-- [x] 🫂 Make accounts follow each others | KIND: 3
-- [x] 📢 Spam public feed in parallel | KIND: 1 
-- [x] Spam public feed using tor in parallel (one exit IP per instance) | KIND 1 
+- [x] 📁 Create a `nostr.json` with all names and pubkeys. | `NIP-05`
+- [x] 📨 Send the `nostr.json` to `youraccount.github.io/.well-known/nostr.json`
+- [x] ℹ️ Update all accounts informations with `name@domain.tld` | `KIND: 0`
+- [x] ℹ️ Update all accounts informations with username,fixed image of a cat and fixed bio. | `KIND: 0`
+- [x] 🫂 Make all accounts follow each others | `KIND: 3`
+- [x] 📢 Spam public feed in parallel | `KIND: 1`
+- [x] 🧅 Spam public feed using tor in parallel (one exit IP per instance) | `KIND: 1 `
+- [x] 🗑 Reset
 
 # Todo:
 - [ ] Spam in dm
-- [ ] Spam custom KIND
 - [ ] Spam in channels
+- [ ] Spam `custom KIND`
 - [ ] Spam public channels creation 
 - [ ] Spam recommand relay 
 - [ ] Multi-Spam
@@ -30,8 +31,8 @@
 - [ ] Use tor to get relays list
 - [ ] Use tor to ping relays list
 - [ ] Use tor to benchmark relays list
-- [ ] Use tor to broadcast profile info  | KIND: 0
-- [ ] Use tor to broadcast follow list  | KIND: 3
+- [ ] Use tor to broadcast profile info  | `KIND: 0`
+- [ ] Use tor to broadcast follow list  | `KIND: 3`
 - [ ] Change benchmark for something more agressive.
 - [ ] Engagement farm
 - [ ] OPENAI Support
