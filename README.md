@@ -1,5 +1,6 @@
 #
-#<b>SPAMSTER</b><br>
+
+# <b>SPAMSTER</b><br>
 ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 #
 <img src="https://img.shields.io/badge/Tested%20under-Ubuntu%2022.04.1%20LTS-orange"><br>
