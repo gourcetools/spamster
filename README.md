@@ -27,6 +27,8 @@
 - [ ] Multi-Spam
 - [ ] React and reply
 - [ ] Reply
+- [ ] Create random names lists with first and last name
+- [ ] Create random bio for each name with OPENAI
 - [ ] React and reply with OPENAI
 - [ ] Use tor to get relays list
 - [ ] Use tor to ping relays list
@@ -34,8 +36,7 @@
 - [ ] Use tor to broadcast profile info  | `KIND: 0`
 - [ ] Use tor to broadcast follow list  | `KIND: 3`
 - [ ] Change benchmark for something more agressive.
-- [ ] Engagement farm
-- [ ] OPENAI Support
+- [ ] Engagement farm with OPENAI
 
 # <b>🍩 What is Spamster?</b><br>
 <br>
