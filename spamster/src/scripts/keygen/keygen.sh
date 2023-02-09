@@ -36,7 +36,7 @@ lines=$(wc -l < "../../../config/names-list.txt")
 
 # Run keygen command for each name in names-list.txt
 cat ../../../config/names-list.txt | xargs -I {} -P $xarg_p sh -c '
-    echo "  == 🔑 🗝️ Generating keypair for {}"
+    echo "  == 🔑 🗝️  Generating keypair for:  {} "
     keypair=$(clust generate-keypair)
     pubkey=$(echo "$keypair" | grep -Po "(?<=Public key: ).*")
     privkey=$(echo "$keypair" | grep -Po "(?<=Private key: ).*")
@@ -62,6 +62,6 @@ echo " "
 echo "          \│/  ┌┬┐┌─┐┌┐┌┌─┐  ┬  \│/   "
 echo "       ──── ─   │││ ││││├┤   │  ─ ────"
 echo "          /│\  ─┴┘└─┘┘└┘└─┘  o  /│\   "
-echo "       	Generated $lines keys"
+echo "       	Generated $lines keypairs"
 echo "       	in $total_time seconds."
 sleep 2
