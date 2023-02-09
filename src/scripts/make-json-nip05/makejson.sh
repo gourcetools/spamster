@@ -1,3 +1,17 @@
+#!/bin/bash
+# keygen.sh
+clear
+echo " "
+echo " "
+echo "     \│/  ┌┬┐┌─┐┬┌─┌─┐  ┌┐┌┌─┐┌─┐┌┬┐┬─┐      ┬┌─┐┌─┐┌┐┌  \│/   ";
+echo "  ──── ─  │││├─┤├┴┐├┤   ││││ │└─┐ │ ├┬┘      │└─┐│ ││││  ─ ────";
+echo "     /│\  ┴ ┴┴ ┴┴ ┴└─┘  ┘└┘└─┘└─┘ ┴ ┴└─  o  └┘└─┘└─┘┘└┘  /│\   ";
+echo " "
+echo " "
+sleep 1
+
+
+
 # Create json directory
 mkdir -p ../../json
 
@@ -29,8 +43,24 @@ echo -e "}"						>> ../../json/nostr.json
 echo -e "}"						>> ../../json/nostr.json
 ## Finish writing nostr.json 
 
+
+# Print total time and number of lines
+echo " "
+echo " "
+echo "          \│/  ┌┬┐┌─┐┌┐┌┌─┐  ┬  \│/   "
+echo "       ──── ─   │││ ││││├┤   │  ─ ────"
+echo "          /│\  ─┴┘└─┘┘└┘└─┘  o  /│\   "
+echo " "
+echo " ✔️  nostr.json created succesfully. "
+echo " 📡 You still have to upload it to YOUR-WEBSITE.COM/.well.known/nostr.json "
+echo " 📁 The file is located at spamster/src/json/nostr.json "
+echo " "
+echo " "
+sleep 1
+
+
+
+
 # Navigate and echo instructions 
 cd ../../scripts/make-json-nip05
-echo "== JSON FILE READY TO UPLOAD "
-echo "== UPLOAD IT TO YOUR-WEBSITE.COM/.well.known/nostr.json "
-echo "== THE JSON FILE is located at spamster/src/json/nostr.json "
+
