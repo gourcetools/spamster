@@ -12,9 +12,18 @@ echo " "
 echo " == ⚙️ Save current config as:"
 read CONFIGNAME
 
-rm -f -d -r ../../../../spamster-configs/$CONFIGNAME
-mkdir -p  ../../../../spamster-configs/$CONFIGNAME
-cp -d -r ../../../../spamster/* ../../../../spamster-configs/$CONFIGNAME/
+if [[ ! "$CONFIGNAME" =~ ^[a-zA-Z0-9_]+$ ]]; then
+  echo "Error: Config name should only contain letters, numbers, and underscores"
+  exit 1
+fi
+
+if [ -d "../../../../spamster-configs/$CONFIGNAME" ]; then
+  echo "Error: Configuration '$CONFIGNAME' already exists"
+  exit 1
+fi
+
+mkdir -p "../../../../spamster-configs/$CONFIGNAME"
+cp -r ../../../../spamster/* ../../../../spamster-configs/$CONFIGNAME/
 
 echo " "
 echo " "
