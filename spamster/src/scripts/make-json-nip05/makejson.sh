@@ -33,7 +33,7 @@ do
 		echo -ne " \"$name\" : \"$(cat $file)\"," >> ../../json/nostr.json
 	) 200>/tmp/nostr_json.lock & 
  	
- 	echo "== Adding $name to json "
+ 	echo "  == 📝  Writing informations in nostr.json for: "$name"."
 done
 wait
 
@@ -53,11 +53,12 @@ echo "       ──── ─   │││ ││││├┤   │  ─ ──�
 echo "          /│\  ─┴┘└─┘┘└┘└─┘  o  /│\   "
 echo " "
 echo " ✔️  nostr.json created succesfully. "
-echo " 📡 You still have to upload it to YOUR-WEBSITE.COM/.well.known/nostr.json "
+echo " 📡 You still have to upload it to:
+ 	https://YOUR-WEBSITE.COM/.well.known/nostr.json"
 echo " 📁 The file is located at spamster/src/json/nostr.json "
 echo " "
 echo " "
-sleep 1
+sleep 5
 
 
 cd ../../scripts/make-json-nip05
