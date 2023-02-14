@@ -102,7 +102,7 @@ case $choice in
    ../menu/START.sh ;;
 
   # Pattern 3
-  3)  echo "   │     0) 📁 Broadcast follow-list KIND:3  │"
+  3)  echo "   │     3) 📁 Broadcast follow-list KIND:3  │"
     cd ../make-contact-list
    ./make-contact-list.sh
   cd ../broadcast-contact-list
