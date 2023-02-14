@@ -48,6 +48,10 @@ echo " =  🗑️ Deleting relays-list.txt"
 rm -f relays-list.txt
 
 cd ../src/scripts/reset
+
+echo " =  🗑️ Deleting multi-spamster"
+rm -f -d -r ../../../../multi-spamster
+
 echo " ============================="
 echo " == 🚮 SPAMSTER RESET DONE 🚮 == "
 echo " ============================="
