@@ -13,20 +13,21 @@ sleep 1
 # Start timer
 start_time=$(date +%s)
 
+# Calculate numbers of processors for xarg
 num_processors=$(grep -c ^processor /proc/cpuinfo)
 xarg_p=$((num_processors - 1))
 
-# Create directories
-mkdir -p ../../tmp
-mkdir -p ../../json
-mkdir -p ../../keys/pubkeys
-mkdir -p ../../keys/privkeys
-mkdir -p ../../keys/names
+# Create necessary directories
+mkdir -p ../../tmp \
+         ../../json \
+         ../../keys/pubkeys \
+         ../../keys/privkeys \
+         ../../keys/names
 
-# Delete old files
-rm -f ../../tmp/*
-rm -f ../../keys/pubkeys/*
-rm -f ../../keys/privkeys/*
+# Clear old files
+rm -f ../../tmp/* \
+      ../../keys/pubkeys/* \
+      ../../keys/privkeys/*
 
 # Replace spaces with dashes 
 sed -i 's/ /-/g' ../../../config/names-list.txt
