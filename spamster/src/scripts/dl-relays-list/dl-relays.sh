@@ -26,6 +26,7 @@ fi
 #Clean GARBAGE
 sed -i '/npub/d' relays-list.txt
 sed -i '/=true/d' relays-list.txt
+sed -i '/ /d' relays-list.txt
 RELAYSCOUNT=$(wc -l < ./relays-list.txt | awk '{print $1}')
 
 
