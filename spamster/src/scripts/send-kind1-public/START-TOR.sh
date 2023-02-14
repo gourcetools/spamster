@@ -10,7 +10,7 @@ sleep $NUMBER
 # Start tor on specified port.
 
 echo "== Starting tor on port:$PORT..."
-tor -f "etc/torsocks.conf$NUMBER" -SocksPort $PORT &
+tor -f "etc/torrc" >/dev/null 2>&1 &
 
 # Let tor start properly.
 echo "== Waiting for tor to start..."

@@ -8,11 +8,12 @@ mkdir -p etc/
 mkdir -p tordata$number/
 
 # Write config file
-echo "SOCKSPort $port" > 	etc/torsocks.conf$number
-echo "ControlPort $control_port" >> etc/torsocks.conf$number
-echo "HashedControlPassword $hashed_password" >> etc/torsocks.conf$number
-echo "DataDirectory" tordata$number >> etc/torsocks.conf$number
-echo "ExitNodes *" >> etc/torsocks.conf$number
+echo "SOCKSPort $port" > 	etc/torrc
+echo "ControlPort $control_port" >> etc/torrc
+echo "HashedControlPassword $hashed_password" >> etc/torrc
+echo "DataDirectory" tordata$number >> etc/torrc
+echo "ExitNodes *" >> etc/torrc
+echo "CookieAuthentication 1" >> etc/torrc
 
 # Save instance and port number for later use in another script 
 echo "$number" > NUMBER
