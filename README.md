@@ -27,7 +27,13 @@
 - [x] 🗑 Reset
 
 # Todo:
-- [ ] Spam in dm
+
+- [ ] Use tor to get relays list
+- [ ] Use tor to ping relays list
+- [ ] Use tor to benchmark relays list
+- [ ] Use tor to broadcast profile info  | `KIND: 0`
+- [ ] Use tor to broadcast follow list  | `KIND: 3`
+- [ ] Spam in DMs
 - [ ] Spam in channels
 - [ ] Spam `custom KIND`
 - [ ] Spam public channels creation 
@@ -38,11 +44,6 @@
 - [ ] Create random names lists with first and last name
 - [ ] Create random bio for each name with OPENAI
 - [ ] React and reply with OPENAI
-- [ ] Use tor to get relays list
-- [ ] Use tor to ping relays list
-- [ ] Use tor to benchmark relays list
-- [ ] Use tor to broadcast profile info  | `KIND: 0`
-- [ ] Use tor to broadcast follow list  | `KIND: 3`
 - [ ] Change benchmark for something more agressive.
 - [ ] Engagement farm with OPENAI
 
