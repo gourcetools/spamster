@@ -8,7 +8,7 @@ echo "   ▀▄▄▄▄▄▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▀�
 echo "     └─> 🌐 https://github.com/gourcetools/spamster ";
 echo " ";
 echo "-------------- 🤖 Welcome to Spamster 🤖 ----------- ";
-echo "---------  Version: 0.1.7 | Liscence: MIT  -----------";
+echo "---------  Version: 0.1.7 | Licence: MIT  -----------";
 echo "------------ 🧪 FOR RESEARCH USE ONLY 🧪 -------------";
 echo " ";
 echo "                  ┌─────────────────┐";
