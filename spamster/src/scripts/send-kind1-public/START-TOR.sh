@@ -10,7 +10,7 @@ sleep $NUMBER
 # Start tor on specified port.
 
 echo "== Starting tor on port:$PORT..."
-tor -f "etc/torrc" >/dev/null 2>&1 &
+tor -f "etc/torrc" 
 
 # Let tor start properly.
 echo "== Waiting for tor to start..."
@@ -22,6 +22,7 @@ while true; do
 echo "======================================================================================="
     echo "== ❌ NO TOR IP FOUND ON $PORT, LET'S WAIT..."
 echo "======================================================================================="
+sleep 5
   else
 echo "======================================================================================="
     echo "== ✅ READY - TOR IP FOUND ON PORT $PORT: $IP"
