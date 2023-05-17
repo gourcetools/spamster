@@ -1,7 +1,7 @@
 # Generate random password for each bot
 password=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 # Hash it for tor config file
-hashed_password=$(tor --hash-password "$password")
+hashed_password=$(tor --hash-password "$password" 2>/dev/null)
 
 # Create dir needed for tor
 mkdir -p etc/
